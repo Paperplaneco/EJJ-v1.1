@@ -13,6 +13,8 @@
 #import "SV01.h"
 #import "SV02.h"
 #import "SV03.h"
+#import "SV03b.h"
+#import "SV03c.h"
 #import "SV04.h"
 #import "SV05.h"
 #import "SV06.h"
@@ -41,6 +43,8 @@
                           @"SV01",
                           @"SV02",
                           @"SV03",
+						  @"SV03b",
+						  @"SV03c",
                           @"SV04",
                           @"SV05",
                           @"SV06",

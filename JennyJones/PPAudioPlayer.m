@@ -21,12 +21,11 @@
     else self.audioPlayer.numberOfLoops = 0;
 }
 
-
 -(void)setVolume:(float)volume
 {
     self.audioPlayer.volume = volume;
     _volume = volume;
-}
+} 
 
 -(void) setAudioFile:(NSString *)audioFile
 {

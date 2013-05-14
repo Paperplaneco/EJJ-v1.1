@@ -11,7 +11,7 @@
 #import "GAITrackedViewController.h"
 
 
-@interface PPAnimatingViewController : GAITrackedViewController
+@interface PPAnimatingViewController : GAITrackedViewController <AVAudioPlayerDelegate>
 
 @property (strong) PPAudioPlayer *voiceOverPlayer;
 @property (strong) PPAudioPlayer *revealPlayer;
@@ -23,5 +23,8 @@
 @property (strong) PPAudioPlayer *SFX05;
 @property (strong) PPAudioPlayer *SFX06;
 @property (strong) PPAudioPlayer *SFX07;
+
+- (IBAction)btnPrev_Tapped:(UITapGestureRecognizer *)sender;
+- (IBAction)btnNext_Tapped:(UITapGestureRecognizer *)sender;
 
 @end

@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *BG;
 @property (weak, nonatomic) IBOutlet UIImageView *Jenny;
 @property (weak, nonatomic) IBOutlet UILabel *Label;
+@property (weak, nonatomic) IBOutlet UIButton *btnPrev;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
 
 @property NSUserDefaults *defaults;
 
@@ -68,7 +70,12 @@
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+
+	//self.btnPrev.alpha = 0.25;
+	//self.btnNext.alpha = 0.25;
+	self.btnNext.userInteractionEnabled = YES;
+	self.btnPrev.userInteractionEnabled = YES;
+	
     self.defaults = [NSUserDefaults standardUserDefaults];
     
     [self.voiceOverPlayer setAudioFile:@"01_VO.mp3"];
@@ -84,7 +91,10 @@
 - (void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
+	
+    [self setBtnPrev:nil];
+	[self setBtnNext:nil];
+	
     [self setBG:nil];
     [self setJenny:nil];
     [self setLabel:nil];

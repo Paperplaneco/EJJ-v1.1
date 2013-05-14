@@ -153,92 +153,92 @@
 
 - (IBAction)SV04Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:4];
+	[self removeNavViewAndFlipToPage:6];
 }
 
 - (IBAction)SV05Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:5];
+	[self removeNavViewAndFlipToPage:7];
 }
 
 - (IBAction)SV06Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:6];
+	[self removeNavViewAndFlipToPage:8];
 }
 
 - (IBAction)SV07Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:7];
+	[self removeNavViewAndFlipToPage:9];
 }
 
 - (IBAction)SV08Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:8];
+	[self removeNavViewAndFlipToPage:10];
 }
 
 - (IBAction)SV09Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:9];
+	[self removeNavViewAndFlipToPage:11];
 }
 
 - (IBAction)SV10Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:10];
+	[self removeNavViewAndFlipToPage:12];
 }
 
 - (IBAction)SV11Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:11];
+	[self removeNavViewAndFlipToPage:13];
 }
 
 - (IBAction)SV12Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:12];
+	[self removeNavViewAndFlipToPage:14];
 }
 
 - (IBAction)SV13Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:13];
+	[self removeNavViewAndFlipToPage:15];
 }
 
 - (IBAction)SV14Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:14];
+	[self removeNavViewAndFlipToPage:16];
 }
 
 - (IBAction)SV15Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:15];
+	[self removeNavViewAndFlipToPage:17];
 }
 
 - (IBAction)SV16Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:16];
+	[self removeNavViewAndFlipToPage:18];
 }
 
 - (IBAction)SV17Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:17];
+	[self removeNavViewAndFlipToPage:19];
 }
 
 - (IBAction)SV18Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:18];
+	[self removeNavViewAndFlipToPage:20];
 }
 
 - (IBAction)SV19Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:19];
+	[self removeNavViewAndFlipToPage:21];
 }
 
 - (IBAction)SV20Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:20];
+	[self removeNavViewAndFlipToPage:22];
 }
 
 - (IBAction)SV21Selected:(UITapGestureRecognizer *)sender
 {
-	[self removeNavViewAndFlipToPage:21];
+	[self removeNavViewAndFlipToPage:23];
 }
 
 - (void) removeNavViewAndFlipToPage:(int)pageNumber

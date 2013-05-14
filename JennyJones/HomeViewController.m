@@ -308,7 +308,7 @@
 
 - (IBAction)puzzle8Tapped:(UITapGestureRecognizer *)sender
 {
-	[[NSUserDefaults standardUserDefaults] setInteger:8 forKey:@"user selected page"];
+	[[NSUserDefaults standardUserDefaults] setInteger:10 forKey:@"user selected page"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"user selected page"];
@@ -316,14 +316,14 @@
 
 - (IBAction)puzzle11Tapped:(UITapGestureRecognizer *)sender
 {
-    [[NSUserDefaults standardUserDefaults] setInteger:11 forKey:@"user selected page"];
+    [[NSUserDefaults standardUserDefaults] setInteger:13 forKey:@"user selected page"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"user selected page"];
 }
 - (IBAction)puzzle14Tapped:(UITapGestureRecognizer *)sender
 {
-    [[NSUserDefaults standardUserDefaults] setInteger:14 forKey:@"user selected page"];
+    [[NSUserDefaults standardUserDefaults] setInteger:16 forKey:@"user selected page"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"user selected page"];
@@ -331,7 +331,7 @@
 
 - (IBAction)puzzle20Tapped:(UITapGestureRecognizer *)sender
 {
-    [[NSUserDefaults standardUserDefaults] setInteger:20 forKey:@"user selected page"];
+    [[NSUserDefaults standardUserDefaults] setInteger:22 forKey:@"user selected page"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 	
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"user selected page"];

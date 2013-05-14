@@ -2963,7 +2963,7 @@ of eight-year-olds in the world called Jenny. </string>
                                     <outletCollection property="gestureRecognizers" destination="KUi-wS-wr2" appends="YES" id="uOv-dl-Wic"/>
                                 </connections>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rdc-D2-49e">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rdc-D2-49e">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2978,7 +2978,7 @@ of eight-year-olds in the world called Jenny. </string>
                                     <action selector="btnPrev_Tapped:" destination="ZZf-FJ-dSh" eventType="touchUpInside" id="Ryi-EC-MNY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TNa-x5-rhr">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TNa-x5-rhr">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3003,6 +3003,8 @@ of eight-year-olds in the world called Jenny. </string>
                         <outlet property="BG" destination="Gt5-wb-vcp" id="HGI-qe-OCc"/>
                         <outlet property="Jenny" destination="Gx6-x2-WBY" id="JVq-Ph-aa1"/>
                         <outlet property="Label" destination="Pj9-ZT-ZPE" id="wta-5V-XR2"/>
+                        <outlet property="btnNext" destination="TNa-x5-rhr" id="9Eo-04-uhJ"/>
+                        <outlet property="btnPrev" destination="Rdc-D2-49e" id="URA-JD-sXb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhD-Tq-Dqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3109,168 +3111,6 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="JXT-q1-3sA">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView contentMode="center" image="03c_BG.jpg" id="MtV-in-63b">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Plane.png" id="EQ8-06-d5Y">
-                                        <rect key="frame" x="681" y="58" width="99" height="74"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Bird.png" id="5yg-qr-M6f">
-                                        <rect key="frame" x="853" y="62.5" width="44" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="...in a very ordinary city in a very ordinary country in a very ordinary part of the world. " lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o5r-cH-QaJ">
-                                        <rect key="frame" x="68" y="-6" width="360" height="168"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Boat.png" id="gg4-KD-5LU">
-                                        <rect key="frame" x="10" y="596" width="100" height="53"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Road.png" id="0We-un-HcK">
-                                        <rect key="frame" x="305.5" y="287.5" width="303" height="265"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car01.png" id="c7t-T7-8Xs">
-                                        <rect key="frame" x="940" y="667" width="75" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car02.png" id="vc8-Np-DFY">
-                                        <rect key="frame" x="869" y="621" width="75" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car04.png" id="0Ed-2Q-CzW">
-                                        <rect key="frame" x="645" y="509" width="70" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car04.png" id="Qgc-O0-NGn">
-                                        <rect key="frame" x="62.5" y="233" width="75" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wug-P1-6k4">
-                                        <rect key="frame" x="219" y="649" width="546" height="94"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">This was nothing out of the ordinary either.
-So did millions of other little girls. </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="03c_HouseFG.png" id="Vcp-en-SC5">
-                                        <rect key="frame" x="113.5" y="309" width="517" height="302"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0N-Dg-FXt">
-                                <rect key="frame" x="14" y="676" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Back" image="Nav_L_UP.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnPrev_Tapped:" destination="fLb-hs-DpG" eventType="touchUpInside" id="VaN-Es-mZ5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UhQ-Gw-hEs">
-                                <rect key="frame" x="932" y="676" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Next" image="Nav_R_UP.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnNext_Tapped:" destination="fLb-hs-DpG" eventType="touchUpInside" id="DoS-bb-Beq"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" id="bGW-Bq-cd6">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView contentMode="scaleToFill" image="03b_BG.jpg" id="98s-C9-XZr">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="NUP-j3-YLG" appends="YES" id="AD9-vA-8ih"/>
-                                        </connections>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="...in a very ordinary suburb..." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ddu-xd-E45">
-                                        <rect key="frame" x="68" y="41" width="688" height="60"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Plane.png" id="2XH-gV-IJ5">
-                                        <rect key="frame" x="454" y="109" width="146" height="107"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Bird.png" id="OGg-LF-MJ2">
-                                        <rect key="frame" x="641" y="91" width="82" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Flamingo.png" id="MUt-yb-NhX">
-                                        <rect key="frame" x="700" y="704" width="84" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Flamingo.png" id="yrx-vV-exz">
-                                        <rect key="frame" x="700" y="590" width="84" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03b_Flamingo.png" id="Wwg-4e-VxD">
-                                        <rect key="frame" x="336" y="525" width="59" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03b_Flamingo.png" id="UmO-5S-bKY">
-                                        <rect key="frame" x="511" y="428" width="59" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car01.png" id="TDu-Dw-Eui">
-                                        <rect key="frame" x="258" y="581" width="203" height="88"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car02.png" id="A6L-Ae-oCe">
-                                        <rect key="frame" x="530" y="540" width="113" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car03.png" id="X93-XR-l37">
-                                        <rect key="frame" x="203" y="661" width="200" height="107"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car04.png" id="7rN-nq-We2">
-                                        <rect key="frame" x="439" y="466" width="113" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Smoke.png" id="Dfq-92-II7">
-                                        <rect key="frame" x="35" y="78" width="942" height="302"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                            </view>
                             <view contentMode="scaleToFill" id="6BJ-LQ-Oa9">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3279,9 +3119,6 @@ So did millions of other little girls. </string>
                                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="lym-9D-RKj" appends="YES" id="59c-bO-3pW"/>
-                                        </connections>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Jenny lived in a very ordinary house..." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eeP-SW-pBQ">
                                         <rect key="frame" x="68" y="41" width="690" height="60"/>
@@ -3298,6 +3135,36 @@ So did millions of other little girls. </string>
                                         <rect key="frame" x="86" y="142" width="175" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0N-Dg-FXt">
+                                        <rect key="frame" x="14" y="676" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Back" image="Nav_L_UP.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPrev_Tapped:" destination="fLb-hs-DpG" eventType="touchUpInside" id="VaN-Es-mZ5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UhQ-Gw-hEs">
+                                        <rect key="frame" x="932" y="676" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Next" image="Nav_R_UP.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNext_Tapped:" destination="fLb-hs-DpG" eventType="touchUpInside" id="DoS-bb-Beq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -3308,36 +3175,14 @@ So did millions of other little girls. </string>
                     <connections>
                         <outlet property="BG" destination="wOV-Lg-bhJ" id="uXi-rE-RCX"/>
                         <outlet property="Bird" destination="PYq-6v-MiD" id="MzR-lT-jz1"/>
-                        <outlet property="Birdb" destination="OGg-LF-MJ2" id="81I-Wv-rXE"/>
-                        <outlet property="Birdc" destination="5yg-qr-M6f" id="gNq-Ja-0ZT"/>
-                        <outlet property="Boat" destination="gg4-KD-5LU" id="vVd-jy-n4t"/>
-                        <outlet property="Car1" destination="c7t-T7-8Xs" id="Gar-Nm-EpU"/>
-                        <outlet property="Car2" destination="vc8-Np-DFY" id="lHb-zx-GVE"/>
-                        <outlet property="Car3" destination="0Ed-2Q-CzW" id="ef3-EH-U1I"/>
-                        <outlet property="Car4" destination="Qgc-O0-NGn" id="LUK-RH-wix"/>
-                        <outlet property="Flamingo1" destination="MUt-yb-NhX" id="gsP-lk-FPS"/>
-                        <outlet property="Flamingo2" destination="yrx-vV-exz" id="tBg-YM-KYM"/>
-                        <outlet property="Flamingo3" destination="Wwg-4e-VxD" id="qD5-5m-gFP"/>
-                        <outlet property="Flamingo4" destination="UmO-5S-bKY" id="gbP-0g-xwB"/>
                         <outlet property="Label" destination="eeP-SW-pBQ" id="3Ys-pd-Hi3"/>
-                        <outlet property="Labelb" destination="Ddu-xd-E45" id="kYR-ay-U7T"/>
-                        <outlet property="Labelc" destination="o5r-cH-QaJ" id="WE0-jR-iRW"/>
-                        <outlet property="Labelc1" destination="Wug-P1-6k4" id="aD9-41-ow1"/>
                         <outlet property="Plane" destination="1sA-3y-h6m" id="JFd-UC-I47"/>
-                        <outlet property="Planeb" destination="2XH-gV-IJ5" id="pym-eE-bA0"/>
-                        <outlet property="Planec" destination="EQ8-06-d5Y" id="7d7-dI-qx8"/>
-                        <outlet property="Smoke" destination="Dfq-92-II7" id="ZqR-LC-NZ8"/>
                         <outlet property="ViewAContainer" destination="6BJ-LQ-Oa9" id="FpC-Zi-SLK"/>
                         <outlet property="ViewBContainer" destination="bGW-Bq-cd6" id="gt8-2J-jxw"/>
                         <outlet property="ViewCContainer" destination="JXT-q1-3sA" id="LNc-Dr-09m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9z-Ib-ev7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="lym-9D-RKj" userLabel="BG Tap Gesture Recognizer">
-                    <connections>
-                        <action selector="bgTapped:" destination="fLb-hs-DpG" id="FpQ-Ux-zIU"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="NUP-j3-YLG" userLabel="View B Tap Gesture Recognizer">
                     <connections>
                         <action selector="viewBTapped:" destination="fLb-hs-DpG" id="kdx-vZ-zyk"/>
@@ -3345,6 +3190,121 @@ So did millions of other little girls. </string>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3668" y="2887"/>
+        </scene>
+        <!--3b - SV03b-->
+        <scene sceneID="dCV-jk-4TA">
+            <objects>
+                <viewController storyboardIdentifier="SV03b" title="SV03b" id="rEi-71-85y" customClass="SV03b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bGW-Bq-cd6">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" image="03b_BG.jpg" id="98s-C9-XZr">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="...in a very ordinary suburb..." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ddu-xd-E45">
+                                <rect key="frame" x="68" y="41" width="688" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Plane.png" id="2XH-gV-IJ5">
+                                <rect key="frame" x="454" y="109" width="146" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Bird.png" id="OGg-LF-MJ2">
+                                <rect key="frame" x="641" y="91" width="82" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Flamingo.png" id="MUt-yb-NhX">
+                                <rect key="frame" x="700" y="704" width="84" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Flamingo.png" id="yrx-vV-exz">
+                                <rect key="frame" x="700" y="590" width="84" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03b_Flamingo.png" id="Wwg-4e-VxD">
+                                <rect key="frame" x="336" y="525" width="59" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03b_Flamingo.png" id="UmO-5S-bKY">
+                                <rect key="frame" x="511" y="428" width="59" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car01.png" id="TDu-Dw-Eui">
+                                <rect key="frame" x="258" y="581" width="203" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car02.png" id="A6L-Ae-oCe">
+                                <rect key="frame" x="530" y="540" width="113" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car03.png" id="X93-XR-l37">
+                                <rect key="frame" x="203" y="661" width="200" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Car04.png" id="7rN-nq-We2">
+                                <rect key="frame" x="439" y="466" width="113" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03b_Smoke.png" id="Dfq-92-II7">
+                                <rect key="frame" x="35" y="78" width="942" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xQF-YY-vc5">
+                                <rect key="frame" x="14" y="676" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back" image="Nav_L_UP.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrev_Tapped:" destination="3ie-t0-Jre" eventType="touchUpInside" id="MAP-Bl-PtP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QVG-v8-fog">
+                                <rect key="frame" x="932" y="676" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next" image="Nav_R_UP.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNext_Tapped:" destination="3ie-t0-Jre" eventType="touchUpInside" id="E2c-3R-p0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="Birdb" destination="OGg-LF-MJ2" id="rhc-aZ-zgc"/>
+                        <outlet property="Flamingo1" destination="MUt-yb-NhX" id="azc-IZ-29G"/>
+                        <outlet property="Flamingo2" destination="yrx-vV-exz" id="3a7-Ka-alE"/>
+                        <outlet property="Flamingo3" destination="Wwg-4e-VxD" id="Flg-S8-SA3"/>
+                        <outlet property="Flamingo4" destination="UmO-5S-bKY" id="JJt-Zq-xrq"/>
+                        <outlet property="Labelb" destination="Ddu-xd-E45" id="Ayo-XW-LAK"/>
+                        <outlet property="Planeb" destination="2XH-gV-IJ5" id="rnC-5F-2Pt"/>
+                        <outlet property="Smoke" destination="Dfq-92-II7" id="nQE-4R-ebL"/>
+                        <outlet property="btnBack" destination="xQF-YY-vc5" id="m0E-sX-xJD"/>
+                        <outlet property="btnNext" destination="QVG-v8-fog" id="9Ch-bV-FSy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ie-t0-Jre" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="3913"/>
         </scene>
         <!--SV04 - SV04-->
         <scene sceneID="5OZ-To-To4">
@@ -3432,6 +3392,123 @@ So did millions of other little girls. </string>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4874" y="2887"/>
+        </scene>
+        <!--3c - SV03c-->
+        <scene sceneID="vRN-bm-eqH">
+            <objects>
+                <viewController storyboardIdentifier="SV03c" title="SV03c" id="pSn-ux-WEc" customClass="SV03c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JXT-q1-3sA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="center" image="03c_BG.jpg" id="MtV-in-63b">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Plane.png" id="EQ8-06-d5Y">
+                                <rect key="frame" x="681" y="58" width="99" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="03_Bird.png" id="5yg-qr-M6f">
+                                <rect key="frame" x="853" y="62.5" width="44" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="...in a very ordinary city in a very ordinary country in a very ordinary part of the world. " lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o5r-cH-QaJ">
+                                <rect key="frame" x="68" y="-6" width="360" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Boat.png" id="gg4-KD-5LU">
+                                <rect key="frame" x="10" y="596" width="100" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Road.png" id="0We-un-HcK">
+                                <rect key="frame" x="305.5" y="287.5" width="303" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car01.png" id="c7t-T7-8Xs">
+                                <rect key="frame" x="940" y="667" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car02.png" id="vc8-Np-DFY">
+                                <rect key="frame" x="869" y="621" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car04.png" id="0Ed-2Q-CzW">
+                                <rect key="frame" x="645" y="509" width="70" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="03c_Car04.png" id="Qgc-O0-NGn">
+                                <rect key="frame" x="62.5" y="233" width="75" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wug-P1-6k4">
+                                <rect key="frame" x="219" y="649" width="546" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">This was nothing out of the ordinary either.
+So did millions of other little girls. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="03c_HouseFG.png" id="Vcp-en-SC5">
+                                <rect key="frame" x="113.5" y="309" width="517" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QaO-Ir-M0x">
+                                <rect key="frame" x="14" y="676" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back" image="Nav_L_UP.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrev_Tapped:" destination="oaW-et-53k" eventType="touchUpInside" id="hJU-IK-hPf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TaG-tQ-NqX">
+                                <rect key="frame" x="932" y="676" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next" image="Nav_R_UP.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNext_Tapped:" destination="oaW-et-53k" eventType="touchUpInside" id="YCS-Gt-2Ea"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="Birdc" destination="5yg-qr-M6f" id="2J0-4Q-Teb"/>
+                        <outlet property="Boat" destination="gg4-KD-5LU" id="DRx-6S-Kcw"/>
+                        <outlet property="Car1" destination="c7t-T7-8Xs" id="nOz-r0-seJ"/>
+                        <outlet property="Car2" destination="vc8-Np-DFY" id="hik-k6-xjg"/>
+                        <outlet property="Car3" destination="0Ed-2Q-CzW" id="CxV-Wo-tX9"/>
+                        <outlet property="Car4" destination="Qgc-O0-NGn" id="sKx-hF-QD9"/>
+                        <outlet property="Labelc" destination="o5r-cH-QaJ" id="yLJ-n8-jff"/>
+                        <outlet property="Labelc1" destination="Wug-P1-6k4" id="Xrb-ks-Z8q"/>
+                        <outlet property="Planec" destination="EQ8-06-d5Y" id="dsd-at-PXa"/>
+                        <outlet property="btnBack" destination="QaO-Ir-M0x" id="0eh-nK-ZYE"/>
+                        <outlet property="btnNext" destination="TaG-tQ-NqX" id="Whb-LM-VOM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaW-et-53k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4290" y="3913"/>
         </scene>
         <!--SV05 - SV05-->
         <scene sceneID="BFz-h9-e2n">
@@ -5966,6 +6043,10 @@ After all, don’t we all see the world through different eyes?
         </class>
         <class className="PPAnimatingViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PPAnimatingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnNext_Tapped:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="btnPrev_Tapped:" candidateClass="UITapGestureRecognizer"/>
+            </relationships>
         </class>
         <class className="PPJennyNavigatorViewController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PPJennyNavigatorViewController.h"/>
@@ -6325,6 +6406,8 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Jenny" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnPrev" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="SV02" superclassName="PPAnimatingViewController">
@@ -6341,28 +6424,40 @@ After all, don’t we all see the world through different eyes?
             <relationships>
                 <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Bird" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="Plane" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ViewAContainer" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="SV03b" superclassName="PPAnimatingViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV03b.h"/>
+            <relationships>
                 <relationship kind="outlet" name="Birdb" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Flamingo1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Flamingo2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Flamingo3" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Flamingo4" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Labelb" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="Planeb" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="Smoke" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="btnBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="SV03c" superclassName="PPAnimatingViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV03c.h"/>
+            <relationships>
                 <relationship kind="outlet" name="Birdc" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Boat" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Car1" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Car2" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Car3" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Car4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Labelb" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="Labelc" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="Labelc1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Plane" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Planeb" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Planec" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Smoke" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ViewAContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="ViewBContainer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="ViewCContainer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="btnBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="SV04" superclassName="PPAnimatingViewController">

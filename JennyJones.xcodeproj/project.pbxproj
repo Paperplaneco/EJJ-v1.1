@@ -41,6 +41,8 @@
 		7030CD8416AD1A4000096C8A /* SV10.m in Sources */ = {isa = PBXBuildFile; fileRef = 7030CD8316AD1A3F00096C8A /* SV10.m */; };
 		7030CD8716AD1A4C00096C8A /* SV12.m in Sources */ = {isa = PBXBuildFile; fileRef = 7030CD8616AD1A4B00096C8A /* SV12.m */; };
 		7030CD9C16AD362D00096C8A /* InfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7030CD9B16AD362A00096C8A /* InfiniteScrollView.m */; };
+		704AF98B17421396002BDF99 /* SV03b.m in Sources */ = {isa = PBXBuildFile; fileRef = 704AF98A17421396002BDF99 /* SV03b.m */; };
+		704AF98E174213AB002BDF99 /* SV03c.m in Sources */ = {isa = PBXBuildFile; fileRef = 704AF98D174213AB002BDF99 /* SV03c.m */; };
 		7076832216C23FDE00514EAC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7076832116C23FDE00514EAC /* OpenGLES.framework */; };
 		7076832416C242C800514EAC /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 7076832316C242C800514EAC /* texture.png */; };
 		7076839C16C37F8300514EAC /* DazRing.png in Resources */ = {isa = PBXBuildFile; fileRef = 7076839A16C37F8300514EAC /* DazRing.png */; };
@@ -1396,6 +1398,10 @@
 		7030CD8616AD1A4B00096C8A /* SV12.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SV12.m; sourceTree = "<group>"; };
 		7030CD9A16AD362900096C8A /* InfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScrollView.h; sourceTree = "<group>"; };
 		7030CD9B16AD362A00096C8A /* InfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollView.m; sourceTree = "<group>"; };
+		704AF98917421396002BDF99 /* SV03b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SV03b.h; sourceTree = "<group>"; };
+		704AF98A17421396002BDF99 /* SV03b.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SV03b.m; sourceTree = "<group>"; };
+		704AF98C174213AB002BDF99 /* SV03c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SV03c.h; sourceTree = "<group>"; };
+		704AF98D174213AB002BDF99 /* SV03c.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SV03c.m; sourceTree = "<group>"; };
 		7076832116C23FDE00514EAC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7076832316C242C800514EAC /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 		7076839A16C37F8300514EAC /* DazRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DazRing.png; sourceTree = "<group>"; };
@@ -2774,6 +2780,10 @@
 				2C6FE0EA16A3AA7500FC71EA /* SV02.m */,
 				2C6FE0EC16A3AA8F00FC71EA /* SV03.h */,
 				70D4B38916DF3F3500FDE164 /* SV03.m */,
+				704AF98917421396002BDF99 /* SV03b.h */,
+				704AF98A17421396002BDF99 /* SV03b.m */,
+				704AF98C174213AB002BDF99 /* SV03c.h */,
+				704AF98D174213AB002BDF99 /* SV03c.m */,
 				2C6FE0EF16A3AAD900FC71EA /* SV04.h */,
 				2C6FE0F016A3AAD900FC71EA /* SV04.m */,
 				2C6FE0F216A3AAE200FC71EA /* SV05.h */,
@@ -6294,6 +6304,8 @@
 				70D4B38A16DF3F3500FDE164 /* SV03.m in Sources */,
 				70A26350170AD0DF0028EDBD /* OBShapedButton.m in Sources */,
 				70A26353170AD0EE0028EDBD /* UIImage+ColorAtPixel.m in Sources */,
+				704AF98B17421396002BDF99 /* SV03b.m in Sources */,
+				704AF98E174213AB002BDF99 /* SV03c.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
