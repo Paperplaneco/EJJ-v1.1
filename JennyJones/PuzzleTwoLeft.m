@@ -15,11 +15,11 @@
 
 @implementation PuzzleTwoLeft
 
-- (void) viewDidAppear:(BOOL)animated
+- (void) viewDidLoad
 {
-    [super viewDidAppear:animated];
-    
-    if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"puzzle two done"] isEqualToString:@"YES"])
+	[super viewDidLoad];
+	
+	if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"puzzle two done"] isEqualToString:@"YES"])
     {
         PPPuzzleTwoViewController *puzzleTwo = [self.storyboard instantiateViewControllerWithIdentifier:@"puzzleTwo"];
         puzzleTwo.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;

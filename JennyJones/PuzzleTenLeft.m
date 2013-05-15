@@ -24,11 +24,11 @@
 	self.scrollView.contentSize = CGSizeMake(4869, 768);
 }
 
-- (void) viewDidAppear:(BOOL)animated
+- (void) viewDidLoad
 {
-    [super viewDidAppear:animated];
-    
-    if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"puzzle ten done"] isEqualToString:@"YES"])
+	[super viewDidLoad];
+	
+	if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"puzzle ten done"] isEqualToString:@"YES"])
     {
         PPPuzzle10ViewController *puzzleTen = [self.storyboard instantiateViewControllerWithIdentifier:@"puzzleTen"];
         puzzleTen.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;

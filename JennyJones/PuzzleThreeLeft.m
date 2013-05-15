@@ -25,11 +25,11 @@
 	self.scrollView.contentSize = self.BG.image.size;
 }
 
-- (void) viewDidAppear:(BOOL)animated
+- (void) viewDidLoad
 {
-    [super viewDidAppear:animated];
-    
-    if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"puzzle three done"] isEqualToString:@"YES"])
+	[super viewDidLoad];
+	
+	if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"puzzle three done"] isEqualToString:@"YES"])
     {
         PPPuzzleThreeViewController *puzzleThree = [self.storyboard instantiateViewControllerWithIdentifier:@"puzzleThree"];
         puzzleThree.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
