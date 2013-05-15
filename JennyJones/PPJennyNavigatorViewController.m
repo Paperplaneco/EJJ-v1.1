@@ -29,6 +29,7 @@
 #import "SV18.h"
 #import "SV19.h"
 #import "SV21.h"
+#import "SV22.h"
 
 @implementation PPJennyNavigatorViewController
 
@@ -63,6 +64,7 @@
                           @"SV19",
                           @"puzzleTenLeft",
                           @"SV21",
+						  @"SV22",
                           nil];
     [self pushViewController:vc animated:NO];
     

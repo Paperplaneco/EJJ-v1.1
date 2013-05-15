@@ -100,6 +100,8 @@
 	
 	[self birdAndPlaneMove];
 	[self smokeAndFlamingosAnimate];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
 }
 
 - (void) viewWillDisappear:(BOOL)animated

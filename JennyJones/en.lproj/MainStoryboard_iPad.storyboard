@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzY-GA-8lO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1169" y="2893"/>
+            <point key="canvasLocation" x="-441" y="2893"/>
         </scene>
         <!--Puzzle10 View Controller - puzzleTen-->
         <scene sceneID="dF1-Dh-8xp">
@@ -703,7 +703,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="41" y="7055"/>
+            <point key="canvasLocation" x="2140" y="9183"/>
         </scene>
         <!--Puzzle One Left - puzzleOneLeft-->
         <scene sceneID="LC4-gl-ewf">
@@ -754,7 +754,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pte-UX-0EA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="4063"/>
+            <point key="canvasLocation" x="3241" y="6191"/>
         </scene>
         <!--Nav View Controller - nav-->
         <scene sceneID="3WF-6v-daR">
@@ -1136,7 +1136,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1177" y="4063"/>
+            <point key="canvasLocation" x="103" y="3951"/>
         </scene>
         <!--Puzzle One View Controller - puzzleOne-->
         <scene sceneID="oX1-MH-8vj">
@@ -1419,7 +1419,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="33" y="4063"/>
+            <point key="canvasLocation" x="2132" y="6191"/>
         </scene>
         <!--Puzzle Two Left - puzzleTwoLeft-->
         <scene sceneID="Mqc-ab-CTm">
@@ -1470,7 +1470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40h-Tw-SCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1165" y="5055"/>
+            <point key="canvasLocation" x="3264" y="7183"/>
         </scene>
         <!--Puzzle Three Left - puzzleThreeLeft-->
         <scene sceneID="XVh-gU-gMP">
@@ -1531,7 +1531,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnS-QN-Zpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="6075"/>
+            <point key="canvasLocation" x="3373" y="8203"/>
         </scene>
         <!--Puzzle Ten Left - puzzleTenLeft-->
         <scene sceneID="9Mz-an-RNB">
@@ -1599,7 +1599,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFE-mH-fq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4980" y="7055"/>
+            <point key="canvasLocation" x="7207" y="9183"/>
         </scene>
         <!--Puzzle Three View Controller - puzzleThree-->
         <scene sceneID="mVD-L4-tNc">
@@ -2127,7 +2127,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="25" y="6075"/>
+            <point key="canvasLocation" x="2124" y="8203"/>
         </scene>
         <!--Puzzle Two View Controller - puzzleTwo-->
         <scene sceneID="4ez-Dw-7WR">
@@ -2488,7 +2488,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="25" y="5055"/>
+            <point key="canvasLocation" x="2124" y="7183"/>
         </scene>
         <!--Jenny Navigator View Controller - Puzzle Navigator-->
         <scene sceneID="wFS-0E-2BD">
@@ -2507,7 +2507,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jp3-u7-6eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2321" y="2909"/>
+            <point key="canvasLocation" x="-1593" y="2909"/>
         </scene>
         <!--Home View Controller - Home-->
         <scene sceneID="9YA-8i-P8S">
@@ -3140,7 +3140,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="38" y="2887"/>
+            <point key="canvasLocation" x="766" y="2887"/>
         </scene>
         <!--SV01 - SV01-->
         <scene sceneID="ZtP-mO-Uhi">
@@ -3246,7 +3246,7 @@ of eight-year-olds in the world called Jenny. </string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1276" y="2887"/>
+            <point key="canvasLocation" x="2124" y="2879"/>
         </scene>
         <!--SV02 - SV02-->
         <scene sceneID="dSc-8e-Hmf">
@@ -3323,7 +3323,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBo-RB-2fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="2887"/>
+            <point key="canvasLocation" x="3332" y="2879"/>
         </scene>
         <!--SV03 - SV03-->
         <scene sceneID="ytc-eU-mpH">
@@ -3411,7 +3411,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3668" y="2887"/>
+            <point key="canvasLocation" x="4516" y="2879"/>
         </scene>
         <!--3b - SV03b-->
         <scene sceneID="dCV-jk-4TA">
@@ -3526,7 +3526,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ie-t0-Jre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3114" y="3913"/>
+            <point key="canvasLocation" x="5690" y="2879"/>
         </scene>
         <!--SV04 - SV04-->
         <scene sceneID="5OZ-To-To4">
@@ -3613,7 +3613,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4874" y="2887"/>
+            <point key="canvasLocation" x="8130" y="2873"/>
         </scene>
         <!--3c - SV03c-->
         <scene sceneID="vRN-bm-eqH">
@@ -3730,7 +3730,7 @@ So did millions of other little girls. </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaW-et-53k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4290" y="3913"/>
+            <point key="canvasLocation" x="6914" y="2873"/>
         </scene>
         <!--SV05 - SV05-->
         <scene sceneID="BFz-h9-e2n">
@@ -3848,7 +3848,7 @@ but it was square.</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="6109" y="2893"/>
+            <point key="canvasLocation" x="9365" y="2879"/>
         </scene>
         <!--SV06 - SV06-->
         <scene sceneID="mtR-g7-drk">
@@ -3995,7 +3995,7 @@ Jenny would have to choose between square oranges, square apples, square apricot
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="7326" y="2893"/>
+            <point key="canvasLocation" x="2134" y="3925"/>
         </scene>
         <!--SV07 - SV07-->
         <scene sceneID="PDg-2g-9jR">
@@ -4131,7 +4131,7 @@ Their little square eyes always followed her too. </string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="8473" y="2893"/>
+            <point key="canvasLocation" x="3281" y="3925"/>
         </scene>
         <!--SV09 - SV09-->
         <scene sceneID="kPp-4l-hZA">
@@ -4216,7 +4216,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eR-PO-9BL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9750" y="2886"/>
+            <point key="canvasLocation" x="4558" y="3918"/>
         </scene>
         <!--SV10 - SV10-->
         <scene sceneID="yP4-UZ-DXX">
@@ -4303,7 +4303,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="10956" y="2876"/>
+            <point key="canvasLocation" x="5764" y="3908"/>
         </scene>
         <!--SV12 - SV12-->
         <scene sceneID="1au-mj-Dp7">
@@ -4442,7 +4442,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="12153" y="2876"/>
+            <point key="canvasLocation" x="6961" y="3908"/>
         </scene>
         <!--SV13 - SV13-->
         <scene sceneID="qhX-hS-AxH">
@@ -4622,7 +4622,82 @@ It’s possible she never really mastered the art of riding a bike because she f
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="13426" y="2874"/>
+            <point key="canvasLocation" x="8234" y="3906"/>
+        </scene>
+        <!--SV22 - SV22-->
+        <scene sceneID="0aE-nD-AP9">
+            <objects>
+                <viewController storyboardIdentifier="SV22" title="SV22" id="cWi-8i-AUG" customClass="SV22" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F9c-kt-1o2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="21_BG.jpg" id="Ps3-z2-hXv">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="21_CreditRoll.png" id="QmB-4U-QOA">
+                                <rect key="frame" x="54" y="-1" width="924" height="737"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Yd-Nm-HV2" customClass="OBShapedButton">
+                                <rect key="frame" x="728" y="537" width="94" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="RateUs.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rateUs:" destination="cWi-8i-AUG" eventType="touchUpInside" id="v8x-JM-4CC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YRj-MP-sno" customClass="OBShapedButton">
+                                <rect key="frame" x="864" y="537" width="108" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="StartAgain.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAgain:" destination="cWi-8i-AUG" eventType="touchUpInside" id="vgk-qi-lYo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EDZ-Ox-twg" customClass="OBShapedButton">
+                                <rect key="frame" x="22" y="676" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back" image="Nav_L_UP.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrev_Tapped:" destination="Qqi-C4-kwY" eventType="touchUpInside" id="SM0-LQ-DMp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="CreditRoll" destination="QmB-4U-QOA" id="p5f-9N-pMi"/>
+                        <outlet property="RateUs" destination="4Yd-Nm-HV2" id="Klk-lO-SFo"/>
+                        <outlet property="Restart" destination="YRj-MP-sno" id="SC2-EC-npp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qqi-C4-kwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8234" y="4921"/>
         </scene>
         <!--SV15 - SV15-->
         <scene sceneID="fdd-lQ-gSP">
@@ -4773,7 +4848,7 @@ It’s possible she never really mastered the art of riding a bike because she f
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="14718" y="2874"/>
+            <point key="canvasLocation" x="9526" y="3906"/>
         </scene>
         <!--SV16 - SV16-->
         <scene sceneID="MFt-uc-pzj">
@@ -5092,7 +5167,7 @@ In fact, they loved the little girl so much that they always made a big deal whe
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="15840" y="2874"/>
+            <point key="canvasLocation" x="2152" y="4898"/>
         </scene>
         <!--SV17 - SV17-->
         <scene sceneID="ama-Nc-sdG">
@@ -5210,7 +5285,7 @@ In fact, they loved the little girl so much that they always made a big deal whe
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="16986" y="2886"/>
+            <point key="canvasLocation" x="3298" y="4910"/>
         </scene>
         <!--SV18 - SV18-->
         <scene sceneID="OIu-kf-Kfc">
@@ -5366,7 +5441,7 @@ a great big square over and over and over again.</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="18184" y="2886"/>
+            <point key="canvasLocation" x="4568" y="4910"/>
         </scene>
         <!--SV19 - SV19-->
         <scene sceneID="6ys-1V-Teb">
@@ -5561,7 +5636,7 @@ a great big square over and over and over again.</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="19290" y="2886"/>
+            <point key="canvasLocation" x="5770" y="4910"/>
         </scene>
         <!--SV21 - SV21-->
         <scene sceneID="n1N-TB-0Fy">
@@ -5606,6 +5681,21 @@ After all, don’t we all see the world through different eyes?
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ONh-Cx-Ren">
+                                <rect key="frame" x="932" y="676" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next" image="Nav_R_UP.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNext_Tapped:" destination="RUJ-R5-2dt" eventType="touchUpInside" id="zkC-by-XfU"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="03B-RX-iUZ">
                                 <rect key="frame" x="22" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5621,36 +5711,6 @@ After all, don’t we all see the world through different eyes?
                                     <action selector="btnPrev_Tapped:" destination="3Wf-g7-Oqn" eventType="touchUpInside" id="kpq-vc-mf0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wsm-wh-iCb">
-                                <rect key="frame" x="726" y="595" width="94" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="RateUs.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="RateUs:" destination="3Wf-g7-Oqn" eventType="touchUpInside" id="xSU-NQ-VId"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7qf-Ud-LKU">
-                                <rect key="frame" x="858" y="595" width="108" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="StartAgain.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Restart:" destination="3Wf-g7-Oqn" eventType="touchUpInside" id="jAC-66-Jvx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -5660,15 +5720,13 @@ After all, don’t we all see the world through different eyes?
                         <outlet property="CreditRoll" destination="ROp-TZ-M5A" id="aje-vL-DQO"/>
                         <outlet property="FerrisLights" destination="iHy-aU-mQ3" id="lbG-yQ-APu"/>
                         <outlet property="Label" destination="wFc-uP-fLp" id="8Um-l5-NDs"/>
-                        <outlet property="RateUs" destination="wsm-wh-iCb" id="QMY-kc-cV1"/>
-                        <outlet property="Restart" destination="7qf-Ud-LKU" id="aKk-dc-aIb"/>
                         <outlet property="TentLights01" destination="vkc-50-Hgd" id="95g-vs-aI7"/>
                         <outlet property="TentLights02" destination="UZo-WU-rTu" id="1JR-tb-Mky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUJ-R5-2dt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20415" y="2893"/>
+            <point key="canvasLocation" x="6991" y="4910"/>
         </scene>
     </scenes>
     <resources>
@@ -6180,7 +6238,7 @@ After all, don’t we all see the world through different eyes?
         <image name="STB_bookmark.png" width="27" height="52"/>
         <image name="STB_btn01.png" width="40" height="42"/>
         <image name="STB_btn02.png" width="40" height="42"/>
-        <image name="StartAgain.png" width="108" height="128"/>
+        <image name="StartAgain.png" width="98" height="129"/>
         <image name="Win.png" width="199" height="113"/>
     </resources>
     <classes>
@@ -6938,10 +6996,16 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="CreditRoll" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="FerrisLights" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="RateUs" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="Restart" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="TentLights01" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="TentLights02" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="SV22" superclassName="PPAnimatingViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV22.h"/>
+            <relationships>
+                <relationship kind="outlet" name="CreditRoll" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="RateUs" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="Restart" candidateClass="OBShapedButton"/>
             </relationships>
         </class>
     </classes>

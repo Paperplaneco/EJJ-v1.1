@@ -28,9 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *CreditRoll;
 @property (weak, nonatomic) IBOutlet UILabel *Label;
 
-@property (weak, nonatomic) IBOutlet UIButton *RateUs;
-@property (weak, nonatomic) IBOutlet UIButton *Restart;
-
 @property (nonatomic) NSTimer *basketTimer;
 @property (nonatomic) NSTimer *creditRollTimer;
 @property NSUserDefaults *defaults;
@@ -42,19 +39,6 @@
 @synthesize basketTimer, creditRollTimer;
 @synthesize defaults = _defaults;
 
-- (IBAction)RateUs:(id)sender {
-    NSString *REVIEW_URL = @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=633392398&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software";
-    
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:REVIEW_URL]];
-}
-
-- (IBAction)Restart:(id)sender {
-	[self.defaults setInteger:0 forKey:@"user selected page"];
-	[self.defaults synchronize];
-	
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"user selected page"];
-}
-
 - (void) lightsTwinkling: (NSTimer *) tmr
 {
     UIImageView *imageView = [tmr userInfo];
@@ -63,24 +47,6 @@
         if (imageView.alpha == 1.0) imageView.alpha = 0.0;
         else imageView.alpha = 1.0;
     }];
-}
-
-- (void) creditRollStartRolling
-{
-    if ([[self.defaults objectForKey:@"sound effect player"] isEqualToString:@"YES"]) [self.SFX07 play];
-    float yMovingPoint = 0.75;
-    
-    if (self.CreditRoll.frame.origin.y > 0)
-        self.CreditRoll.frame = CGRectMake(self.CreditRoll.frame.origin.x, self.CreditRoll.frame.origin.y - yMovingPoint, self.CreditRoll.frame.size.width, self.CreditRoll.frame.size.height);
-	else
-	{
-		[creditRollTimer invalidate];
-        		
-		[UIView animateWithDuration:1.0 animations:^{
-			self.RateUs.alpha = 1.0;
-			self.Restart.alpha = 1.0;
-		}];
-	}
 }
 
 - (void) basketMoving
@@ -95,7 +61,7 @@
     self.Label.hidden = YES;
     
     self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMoving) userInfo:nil repeats:YES];
-    self.creditRollTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(creditRollStartRolling) userInfo:nil repeats:YES];
+    //self.creditRollTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(creditRollStartRolling) userInfo:nil repeats:YES];
 }
 
 - (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event {
@@ -230,17 +196,12 @@
     self.defaults = [NSUserDefaults standardUserDefaults];
     
     [self.voiceOverPlayer setAudioFile:@"21_VO.mp3"];
-    [self.SFX07 setAudioFile:@"21_credits.mp3"];
-    
     
     if ([[self.defaults objectForKey:@"read aloud player"] isEqualToString:@"YES"]) [self.voiceOverPlayer play];
     
     self.Label.font = [UIFont fontWithName:@"AFontwithSerifs" size:30];
     
     scale = 1.0;
-	
-	self.RateUs.alpha = 0.0;
-	self.Restart.alpha = 0.0;
     
     self.Basket.layer.anchorPoint = CGPointMake(0, 0);
     self.Basket.frame = CGRectMake(0, 0, self.Basket.frame.size.width, self.Basket.frame.size.height);

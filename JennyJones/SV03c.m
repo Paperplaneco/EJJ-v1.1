@@ -128,11 +128,7 @@
 }
 
 - (void) birdAndPlaneMove
-{
-	[self.SFX01 setAudioFile:@"03_BG02.mp3"];
-	self.SFX01.volume = 1.0;
-	self.SFX02.volume = 0.35;
-	
+{	
 	if ([[self.defaults objectForKey:@"sound effect player"] isEqualToString:@"YES"]) [self.SFX01 play];
 	if ([[self.defaults objectForKey:@"sound effect player"] isEqualToString:@"YES"]) [self.SFX02 play];
 	
@@ -173,6 +169,11 @@
 	self.defaults = [NSUserDefaults standardUserDefaults];
     
     [self.voiceOverPlayer setAudioFile:@"03c_VO.mp3"];
+	[self.SFX01 setAudioFile:@"03_BG02.mp3"];
+	
+	self.SFX01.volume = 1.0;
+	self.SFX02.volume = 0.35;
+	
     if ([[self.defaults objectForKey:@"read aloud player"] isEqualToString:@"YES"]) [self.voiceOverPlayer play];
 	
 	self.Labelc.font = [UIFont fontWithName:@"AFontwithSerifs" size:32];
@@ -184,6 +185,8 @@
 	[self carThreeMove];
 	[self carFourMove];
 	[self birdAndPlaneMove];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
 }
 
 - (void) viewWillDisappear:(BOOL)animated
