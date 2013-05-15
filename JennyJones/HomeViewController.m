@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *warningReset;
 @property (weak, nonatomic) IBOutlet OBShapedButton *warningResetNo;
 @property (weak, nonatomic) IBOutlet OBShapedButton *warningResetYes;
+@property (weak, nonatomic) IBOutlet UIImageView *babyGate;
+@property (weak, nonatomic) IBOutlet UIImageView *thirdCircle;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *otherCircles;
 
 @property (nonatomic, strong) NSArray *pageImages;
 @property (nonatomic, strong) NSMutableArray *pageViews;
@@ -82,8 +85,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"currentPage"];
 }
 
-- (IBAction)aboutPage:(UITapGestureRecognizer *)sender
-{
+- (IBAction)thirdCircleTapped:(UITapGestureRecognizer *)sender {
 	if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"sound effect player"] isEqualToString:@"YES"]) [self.SFX04 play];
 	
     self.About_BG.hidden = NO;
@@ -98,6 +100,33 @@
     [self imageUserInteractionEnabled: NO];
 	
 	[self revealPopoverCloseButton:self.About_BG.frame];
+	
+	[self hideBabyGate:YES];
+}
+
+- (IBAction)otherCirclesTapped:(UITapGestureRecognizer *)sender {
+	[self hideBabyGate:YES];
+	[self imageAlpha:1.0];
+	[self imageUserInteractionEnabled:YES];
+	self.DimBackground.hidden = YES;
+    self.DimBackground.alpha = 0.0;
+}
+
+- (IBAction)aboutPage:(UITapGestureRecognizer *)sender
+{
+	[self hideBabyGate:NO];
+	[self imageAlpha:0.4];
+	[self imageUserInteractionEnabled:NO];
+}
+
+- (void) hideBabyGate: (BOOL) show
+{
+	self.babyGate.hidden = show;
+	self.thirdCircle.hidden = show;
+	
+	for (UIImageView *image in self.otherCircles) {
+		image.hidden = show;
+	}
 }
 
 - (IBAction)readAloudTapped:(UITapGestureRecognizer *)sender
@@ -660,6 +689,9 @@
 	[self setWarningReset:nil];
 	[self setWarningResetNo:nil];
 	[self setWarningResetYes:nil];
+	[self setBabyGate:nil];
+	[self setThirdCircle:nil];
+	[self setOtherCircles:nil];
     [super viewDidUnload];
 }
 @end

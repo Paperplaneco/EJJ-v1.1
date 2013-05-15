@@ -2756,6 +2756,122 @@
                                     <action selector="puzzleResetYesTapped:" destination="Ay2-9r-S6v" eventType="touchUpInside" id="Zfx-VS-Aqb"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="00_Babygate.png" id="OGR-hr-R9n">
+                                <rect key="frame" x="221" y="187" width="581" height="395"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" contentMode="scaleToFill" id="Jb3-8k-9C1" userLabel="Thrid Circle">
+                                <rect key="frame" x="492" y="413" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="03Q-kG-NwS" appends="YES" id="E5w-bK-0ad"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="75n-Jf-N7m">
+                                <rect key="frame" x="323" y="348" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="TNg-D7-R9B"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="fWV-kg-Y6z">
+                                <rect key="frame" x="408" y="478" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="oCM-zh-yiM"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="der-ks-M07">
+                                <rect key="frame" x="323" y="478" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="BLY-ap-Y0V"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="JXc-8O-4Zw">
+                                <rect key="frame" x="323" y="412" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="2zj-GZ-ngX"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="zm6-aU-I1P">
+                                <rect key="frame" x="408" y="412" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="17t-bi-LOT"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="dOL-D7-qSF">
+                                <rect key="frame" x="492" y="348" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="u7j-oF-4pT"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="8nt-Dg-W4l">
+                                <rect key="frame" x="408" y="348" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="uOu-Ou-E7P"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="mIm-Mr-wSd">
+                                <rect key="frame" x="493" y="478" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="JB6-5A-jDU"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="ctw-qy-QO7">
+                                <rect key="frame" x="576" y="478" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="3pW-wJ-z5U"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="r9q-4P-6jZ">
+                                <rect key="frame" x="661" y="478" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="Auk-IK-BYe"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="rn1-z9-39G">
+                                <rect key="frame" x="661" y="412" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="7Vc-PA-Gb8"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="Ucy-Zi-o1K">
+                                <rect key="frame" x="577" y="413" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="xuR-mz-gLB"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="gcm-yN-P2x">
+                                <rect key="frame" x="577" y="347" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="Pld-uC-hPc"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" id="klG-eM-7lx">
+                                <rect key="frame" x="661" y="347" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="oM5-e9-Dcx"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -2792,13 +2908,29 @@
                         <outlet property="SFX_Off" destination="mRH-DI-DdO" id="QTR-xY-MNd"/>
                         <outlet property="SFX_On" destination="Zhp-45-AXp" id="8FP-pi-Eic"/>
                         <outlet property="StartReading" destination="CCk-fF-lcZ" id="qnz-7J-iRM"/>
+                        <outlet property="babyGate" destination="OGR-hr-R9n" id="QKL-xD-mjV"/>
                         <outlet property="background" destination="TIE-6D-K6h" id="1sK-Nc-Azc"/>
                         <outlet property="pageControl" destination="t0Y-kG-xcV" id="nQa-Y1-g6l"/>
                         <outlet property="popoverClose" destination="Qyy-xR-6vs" id="k6g-4h-1lh"/>
                         <outlet property="scrollView" destination="mjs-LC-vgh" id="UdC-vA-DX6"/>
+                        <outlet property="thirdCircle" destination="Jb3-8k-9C1" id="sRd-kc-jWA"/>
                         <outlet property="warningReset" destination="y9L-Hy-1rg" id="ULD-HQ-gkc"/>
                         <outlet property="warningResetNo" destination="weM-EZ-Nhv" id="Bgy-Si-bRm"/>
                         <outlet property="warningResetYes" destination="rKM-IO-jzM" id="72B-w8-h6l"/>
+                        <outletCollection property="otherCircles" destination="75n-Jf-N7m" id="yCA-H4-QVo"/>
+                        <outletCollection property="otherCircles" destination="8nt-Dg-W4l" id="eZY-gJ-qnN"/>
+                        <outletCollection property="otherCircles" destination="dOL-D7-qSF" id="qlL-UM-5JY"/>
+                        <outletCollection property="otherCircles" destination="gcm-yN-P2x" id="Meg-Sg-4Dr"/>
+                        <outletCollection property="otherCircles" destination="klG-eM-7lx" id="yHf-PF-X9r"/>
+                        <outletCollection property="otherCircles" destination="JXc-8O-4Zw" id="hCB-jG-Hxx"/>
+                        <outletCollection property="otherCircles" destination="zm6-aU-I1P" id="7BQ-Cw-Yi2"/>
+                        <outletCollection property="otherCircles" destination="Ucy-Zi-o1K" id="4em-vz-WbF"/>
+                        <outletCollection property="otherCircles" destination="rn1-z9-39G" id="KAt-B0-oa5"/>
+                        <outletCollection property="otherCircles" destination="der-ks-M07" id="RZA-9N-ZNm"/>
+                        <outletCollection property="otherCircles" destination="fWV-kg-Y6z" id="JlT-sO-FN1"/>
+                        <outletCollection property="otherCircles" destination="mIm-Mr-wSd" id="gxC-sd-ite"/>
+                        <outletCollection property="otherCircles" destination="ctw-qy-QO7" id="Nnm-C3-Qq9"/>
+                        <outletCollection property="otherCircles" destination="r9q-4P-6jZ" id="TOy-I7-Lof"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s20-Gc-RJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2915,6 +3047,16 @@
                 <tapGestureRecognizer id="b6B-1S-F6j" userLabel="PZL Reset Tap Gesture Recognizer">
                     <connections>
                         <action selector="puzzleResetTapped:" destination="Ay2-9r-S6v" id="eYT-Q9-nRE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="03Q-kG-NwS" userLabel="Third Circle Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="thirdCircleTapped:" destination="Ay2-9r-S6v" id="asZ-Pk-hBh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RhA-9r-bil" userLabel="Other Circles Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="otherCirclesTapped:" destination="Ay2-9r-S6v" id="6ov-e8-2hm"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -5468,6 +5610,7 @@ After all, don’t we all see the world through different eyes?
         <image name="00PZL_Reset.png" width="125" height="123"/>
         <image name="00_About.png" width="326" height="273"/>
         <image name="00_BG.png" width="1024" height="768"/>
+        <image name="00_Babygate.png" width="581" height="395"/>
         <image name="00_Gramophone.png" width="375" height="522"/>
         <image name="00_Medal_01.png" width="93" height="93"/>
         <image name="00_Medal_02.png" width="93" height="93"/>
@@ -5996,13 +6139,16 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="SFX_Off" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SFX_On" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="StartReading" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="babyGate" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
                 <relationship kind="outlet" name="popoverClose" candidateClass="OBShapedButton"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="thirdCircle" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="warningReset" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="warningResetNo" candidateClass="OBShapedButton"/>
                 <relationship kind="outlet" name="warningResetYes" candidateClass="OBShapedButton"/>
+                <relationship kind="outletCollection" name="otherCircles" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="InfiniteScrollView" superclassName="UIScrollView">

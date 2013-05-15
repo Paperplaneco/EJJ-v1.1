@@ -23,9 +23,6 @@
 @property (weak, nonatomic) IBOutlet OBShapedButton *Note;
 @property (weak, nonatomic) IBOutlet OBShapedButton *MiaoHelp;
 
-
-
-
 @property (weak, nonatomic) IBOutlet UIImageView *MiaoHelp_Tapped;
 @property (weak, nonatomic) IBOutlet UIImageView *MedalSilver;
 @property (weak, nonatomic) IBOutlet UIImageView *MedalGold;
