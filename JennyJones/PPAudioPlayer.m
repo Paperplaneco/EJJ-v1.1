@@ -54,6 +54,20 @@
     }
     return self;
 }
+
+- (id) init
+{
+	if (self = [super init])
+		self.audioPlayer.delegate = self;
+	
+	return self;
+}
+
+- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+	NSLog(@"Player finish playing");
+}
+
 -(void) play
 {
     [self.audioPlayer play];

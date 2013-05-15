@@ -13,7 +13,6 @@
 {
     float scale;
     NSTimer *basketTimer;
-    NSTimer *creditRollTimer;
     
     CAEmitterLayer *fireworksEmitter;
     CAEmitterCell *rocket;
@@ -25,7 +24,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *TentLights01;
 @property (weak, nonatomic) IBOutlet UIImageView *TentLights02;
 @property (weak, nonatomic) IBOutlet UIImageView *FerrisLights;
-@property (weak, nonatomic) IBOutlet UIImageView *CreditRoll;
 @property (weak, nonatomic) IBOutlet UILabel *Label;
 
 @property (nonatomic) NSTimer *basketTimer;
@@ -206,8 +204,6 @@
     self.Basket.layer.anchorPoint = CGPointMake(0, 0);
     self.Basket.frame = CGRectMake(0, 0, self.Basket.frame.size.width, self.Basket.frame.size.height);
     
-    self.CreditRoll.frame = CGRectMake(self.CreditRoll.frame.origin.x, self.view.frame.size.height, self.CreditRoll.frame.size.width, self.CreditRoll.frame.size.height);
-    
     [self lightsStartTwinkling];
     
     // CreditImage start rolling
@@ -227,7 +223,6 @@
     self.TentLights01 = nil;
     self.TentLights02 = nil;
     self.FerrisLights = nil;
-    self.CreditRoll = nil;
     self.Label = nil;
     
     [self.basketTimer invalidate];

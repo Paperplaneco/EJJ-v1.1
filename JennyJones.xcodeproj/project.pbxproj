@@ -6409,8 +6409,8 @@
 		E96050EA1585E4DD00C6E693 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Paperplane Pilots Pte Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paperplane Pilots Pte Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JennyJones/JennyJones-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
@@ -6424,8 +6424,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -6433,8 +6433,8 @@
 		E96050EB1585E4DD00C6E693 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Paperplane Pilots Pte Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paperplane Pilots Pte Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JennyJones/JennyJones-Prefix.pch";
 				GENERATE_PROFILING_CODE = YES;
@@ -6448,8 +6448,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

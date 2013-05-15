@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface PPAudioPlayer : NSObject
+@interface PPAudioPlayer : NSObject <AVAudioPlayerDelegate>
 
 @property (strong,nonatomic)NSString * fileName;
 @property (strong,nonatomic)AVAudioPlayer * audioPlayer;

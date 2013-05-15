@@ -39,11 +39,6 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"forward"];
 }
 
-- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
-{
-	
-}
-
 - (void) viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];

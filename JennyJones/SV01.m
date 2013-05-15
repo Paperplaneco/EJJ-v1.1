@@ -82,7 +82,7 @@
 	[self.SFX02 setAudioFile:@"01_Whoosh.mp3"];
 	
     if ([[self.defaults objectForKey:@"read aloud player"] isEqualToString:@"YES"]) [self.voiceOverPlayer play];
-    
+
     self.Label.font = [UIFont fontWithName:@"AFontwithSerifs" size:32];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];

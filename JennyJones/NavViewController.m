@@ -350,7 +350,7 @@
 	
 	[self.SFX01 setAudioFile:@"00_switch.mp3"];
 	
-	self.scrollView.contentSize = CGSizeMake(914, 1350);
+	self.scrollView.contentSize = CGSizeMake(914, 1555);
 	
 	if ([[self.defaults objectForKey:@"sound effect player"] isEqualToString:@"YES"])
 		self.SFX.center = SFX_ON_POS;

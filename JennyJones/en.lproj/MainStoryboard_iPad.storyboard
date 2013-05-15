@@ -804,8 +804,16 @@
                                             <outletCollection property="gestureRecognizers" destination="2qk-Eo-93P" appends="YES" id="ASg-GU-Vl3"/>
                                         </connections>
                                     </imageView>
-                                    <imageView contentMode="center" image="STB_05.png" id="leu-5y-awf">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="XEk-03-K5t">
                                         <rect key="frame" x="11" y="234" width="206" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="dVu-Kq-fuu">
+                                        <rect key="frame" x="241" y="234" width="206" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="center" image="STB_05.png" id="leu-5y-awf">
+                                        <rect key="frame" x="471" y="234" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -813,7 +821,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_06.png" id="VUG-iI-krw">
-                                        <rect key="frame" x="241" y="234" width="206" height="192"/>
+                                        <rect key="frame" x="701" y="234" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -821,7 +829,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_07.png" id="lFX-pi-uiR">
-                                        <rect key="frame" x="471" y="234" width="206" height="192"/>
+                                        <rect key="frame" x="11" y="460" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -829,7 +837,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_08.png" id="iYi-vq-Neu">
-                                        <rect key="frame" x="701" y="234" width="206" height="192"/>
+                                        <rect key="frame" x="241" y="460" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -837,7 +845,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_09.png" id="7wM-cd-095">
-                                        <rect key="frame" x="11" y="460" width="206" height="192"/>
+                                        <rect key="frame" x="471" y="460" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -845,7 +853,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_10.png" id="krj-MT-2ps">
-                                        <rect key="frame" x="241" y="460" width="206" height="192"/>
+                                        <rect key="frame" x="701" y="460" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -853,7 +861,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_11.png" id="HDi-g5-h0X">
-                                        <rect key="frame" x="471" y="460" width="206" height="192"/>
+                                        <rect key="frame" x="11" y="685" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -861,7 +869,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_12.png" id="mVF-rp-SH4">
-                                        <rect key="frame" x="701" y="460" width="206" height="192"/>
+                                        <rect key="frame" x="241" y="685" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -869,7 +877,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_13.png" id="G2l-On-nDd">
-                                        <rect key="frame" x="11" y="685" width="206" height="192"/>
+                                        <rect key="frame" x="471" y="685" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -877,7 +885,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_14.png" id="E1D-W7-f0L">
-                                        <rect key="frame" x="241" y="685" width="206" height="192"/>
+                                        <rect key="frame" x="701" y="685" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -885,7 +893,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_15.png" id="AtR-AI-oDz">
-                                        <rect key="frame" x="471" y="685" width="206" height="192"/>
+                                        <rect key="frame" x="11" y="911" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -893,7 +901,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_16.png" id="dGk-G3-46g">
-                                        <rect key="frame" x="701" y="685" width="206" height="192"/>
+                                        <rect key="frame" x="241" y="911" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -901,7 +909,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_17.png" id="rIW-A1-gIR">
-                                        <rect key="frame" x="11" y="911" width="206" height="192"/>
+                                        <rect key="frame" x="471" y="911" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -909,7 +917,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_18.png" id="xL8-M1-IPb">
-                                        <rect key="frame" x="241" y="911" width="206" height="192"/>
+                                        <rect key="frame" x="701" y="911" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -917,7 +925,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_19.png" id="uc1-YO-BSQ">
-                                        <rect key="frame" x="471" y="911" width="206" height="192"/>
+                                        <rect key="frame" x="11" y="1137" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -925,7 +933,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_20.png" id="VsB-Cj-Vfs">
-                                        <rect key="frame" x="701" y="911" width="206" height="192"/>
+                                        <rect key="frame" x="241" y="1137" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -933,7 +941,7 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_21.png" id="dcI-qH-hdj">
-                                        <rect key="frame" x="11" y="1137" width="206" height="192"/>
+                                        <rect key="frame" x="471" y="1137" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
@@ -941,12 +949,16 @@
                                         </connections>
                                     </imageView>
                                     <imageView contentMode="scaleToFill" image="STB_22.png" id="8Ng-ZR-r6T">
-                                        <rect key="frame" x="241" y="1137" width="206" height="192"/>
+                                        <rect key="frame" x="701" y="1137" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="4jn-uX-G5U" appends="YES" id="O7D-6q-nF9"/>
                                         </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="9Ch-1q-H7W">
+                                        <rect key="frame" x="11" y="1363" width="206" height="192"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="STB_bookmark.png" id="WVN-qV-jsx">
                                         <rect key="frame" x="182" y="16" width="27" height="52"/>
@@ -5666,10 +5678,6 @@ a great big square over and over and over again.</string>
                                 <rect key="frame" x="17" y="-8" width="537" height="599"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" image="21_CreditRoll.png" id="ROp-TZ-M5A">
-                                <rect key="frame" x="54" y="-1" width="924" height="737"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wFc-uP-fLp">
                                 <rect key="frame" x="562" y="199" width="425" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5717,7 +5725,6 @@ After all, don’t we all see the world through different eyes?
                     </view>
                     <connections>
                         <outlet property="Basket" destination="0ZO-gf-cUp" id="v9B-TC-Sf7"/>
-                        <outlet property="CreditRoll" destination="ROp-TZ-M5A" id="aje-vL-DQO"/>
                         <outlet property="FerrisLights" destination="iHy-aU-mQ3" id="lbG-yQ-APu"/>
                         <outlet property="Label" destination="wFc-uP-fLp" id="8Um-l5-NDs"/>
                         <outlet property="TentLights01" destination="vkc-50-Hgd" id="95g-vs-aI7"/>
@@ -6297,6 +6304,32 @@ After all, don’t we all see the world through different eyes?
         <class className="NavViewController" superclassName="PPAnimatingViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NavViewController.h"/>
             <relationships>
+                <relationship kind="action" name="ReadaloudPanned:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="action" name="ReadaloudTapped:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SFXPanned:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="action" name="SFXTapped:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV01Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV02Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV03Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV04Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV05Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV06Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV07Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV08Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV09Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV0Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV10Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV11Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV12Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV13Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV14Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV15Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV16Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV17Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV18Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV19Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV20Selected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="SV21Selected:" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="outlet" name="Bookmark" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Readaloud" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SFX" candidateClass="UIImageView"/>
@@ -6993,7 +7026,6 @@ After all, don’t we all see the world through different eyes?
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SV21.h"/>
             <relationships>
                 <relationship kind="outlet" name="Basket" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="CreditRoll" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="FerrisLights" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="TentLights01" candidateClass="UIImageView"/>
