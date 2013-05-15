@@ -451,12 +451,25 @@
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <gestureRecognizers/>
                                             </imageView>
-                                            <imageView contentMode="scaleToFill" image="PZL09_howto.png" id="Fg3-Y7-owl">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PZL09_howto.png" id="Fg3-Y7-owl">
                                                 <rect key="frame" x="2767" y="187" width="581" height="395"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" image="PZLhowto_Play.png" id="m2V-cm-zUx">
+                                                <rect key="frame" x="3093" y="464" width="197" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="fdA-Fa-rK6" appends="YES" id="mkr-Md-wXe"/>
+                                                    <outletCollection property="gestureRecognizers" destination="fdA-Fa-rK6" appends="YES" id="OOi-fL-yTF"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView contentMode="scaleToFill" image="PZLhowto_Skip.png" id="Bm2-Wh-svo">
+                                                <rect key="frame" x="2845" y="464" width="218" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="808-GG-JJa" appends="YES" id="i5u-F6-K5y"/>
                                                 </connections>
                                             </imageView>
                                         </subviews>
@@ -571,6 +584,8 @@
                         <outlet property="PZL09_Miaow01" destination="tkm-vc-NQs" id="UZS-xh-s0N"/>
                         <outlet property="PZL_DimBackground" destination="1lP-IB-n6y" id="lPx-bG-Ph8"/>
                         <outlet property="PZL_Instruction" destination="Fg3-Y7-owl" id="IR4-DC-3e3"/>
+                        <outlet property="PZL_Instruction_Play" destination="m2V-cm-zUx" id="jWa-hE-ofo"/>
+                        <outlet property="PZL_Instruction_Skip" destination="Bm2-Wh-svo" id="xn5-IF-en7"/>
                         <outlet property="background1" destination="ZVC-o5-GJU" id="b50-jN-b99"/>
                         <outlet property="background2" destination="Lco-nx-KOU" id="CID-Z1-Ttn"/>
                         <outlet property="background3" destination="5Ps-8I-axv" id="fRE-Q1-rID"/>
@@ -672,14 +687,19 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2d-CV-jXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="fdA-Fa-rK6" userLabel="PZL Instruction Tap Gesture Recognizer">
-                    <connections>
-                        <action selector="puzzleInstructionTapped:" destination="Gvi-b9-2aw" id="MWq-l4-loR"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="Khd-oJ-Cc8" userLabel="Miao Tap Gesture Recognizer">
                     <connections>
                         <action selector="miaowTapped:" destination="Gvi-b9-2aw" id="7Du-UI-jfj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="808-GG-JJa" userLabel="PZL Instruction Skip Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="puzzleInstructionSkipped:" destination="Gvi-b9-2aw" id="Hya-T0-cZp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fdA-Fa-rK6" userLabel="PZL Instruction Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="puzzleInstructionTapped:" destination="Gvi-b9-2aw" id="MWq-l4-loR"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1288,12 +1308,25 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <imageView contentMode="scaleToFill" image="PZL06_howto.png" id="BHr-11-yC1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PZL06_howto.png" id="BHr-11-yC1">
                                 <rect key="frame" x="221" y="187" width="581" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="PZLhowto_Play.png" id="0E8-XX-kPw">
+                                <rect key="frame" x="550" y="462" width="197" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ctg-TW-HAT" appends="YES" id="mhb-la-Fz0"/>
+                                    <outletCollection property="gestureRecognizers" destination="ctg-TW-HAT" appends="YES" id="8Be-2k-K0l"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="PZLhowto_Skip.png" id="QVY-WL-WDv">
+                                <rect key="frame" x="283" y="462" width="218" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nMW-pi-HYk" appends="YES" id="9hD-U5-rvm"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -1345,6 +1378,8 @@
                         <outlet property="PZL06_miaow02b" destination="glU-hH-69F" id="53T-hq-YGG"/>
                         <outlet property="PZL_DimBackground" destination="1r9-As-2AC" id="8jB-Jl-Y19"/>
                         <outlet property="PZL_Instruction" destination="BHr-11-yC1" id="Wra-vc-CkX"/>
+                        <outlet property="PZL_Instruction_Play" destination="0E8-XX-kPw" id="k0y-Gk-hjF"/>
+                        <outlet property="PZL_Instruction_Skip" destination="QVY-WL-WDv" id="DP4-SH-ywA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56B-zO-REY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1376,6 +1411,11 @@
                 <tapGestureRecognizer id="ctg-TW-HAT" userLabel="PZL Instruction Tap Gesture Recognizer">
                     <connections>
                         <action selector="puzzleInstructionTapped:" destination="hdh-Qa-7TK" id="Ljl-Km-2O9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nMW-pi-HYk" userLabel="PZL Instruction Skip Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="puzzleInstructionSkipped:" destination="hdh-Qa-7TK" id="Nyv-ad-Zwy"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1940,12 +1980,25 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <gestureRecognizers/>
                                     </imageView>
-                                    <imageView contentMode="scaleToFill" image="PZL08_howto.png" id="KCU-HT-MEt">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PZL08_howto.png" id="KCU-HT-MEt">
                                         <rect key="frame" x="221.5" y="187" width="581" height="394"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" image="PZLhowto_Play.png" id="ggT-Ys-2bc">
+                                        <rect key="frame" x="554" y="455" width="197" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="9F3-Lw-cxM" appends="YES" id="epl-zv-guk"/>
+                                            <outletCollection property="gestureRecognizers" destination="9F3-Lw-cxM" appends="YES" id="sEA-ab-gXZ"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" image="PZLhowto_Skip.png" id="3eY-wi-1jU">
+                                        <rect key="frame" x="286" y="455" width="218" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="r7E-Pa-ry7" appends="YES" id="yPA-q6-Z09"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -2052,11 +2105,13 @@
                         <outlet property="PZL08_Reveal" destination="bUF-3h-qqx" id="O2f-o9-7aE"/>
                         <outlet property="PZL_DimBackground" destination="mzd-gJ-zti" id="KGu-Mm-OFb"/>
                         <outlet property="PZL_Instruction" destination="KCU-HT-MEt" id="Rdy-I1-Cqx"/>
+                        <outlet property="PZL_Instruction_Play" destination="ggT-Ys-2bc" id="hce-7z-ZmH"/>
+                        <outlet property="PZL_Instruction_Skip" destination="3eY-wi-1jU" id="LCv-Z6-TqC"/>
                         <outlet property="scrollView" destination="5fs-Ay-kIQ" id="xOm-2N-WNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lX-jy-6Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="sdl-G8-C5G">
+                <tapGestureRecognizer id="sdl-G8-C5G" userLabel="Miao Tap Gesture Recognizer">
                     <connections>
                         <action selector="miaowTapped:" destination="x8V-EA-1xX" id="tuM-NX-JKR"/>
                     </connections>
@@ -2064,6 +2119,11 @@
                 <tapGestureRecognizer id="9F3-Lw-cxM" userLabel="PZL Instruction Tap Gesture Recognizer">
                     <connections>
                         <action selector="puzzleInstructionTapped:" destination="x8V-EA-1xX" id="24d-m8-BUl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="r7E-Pa-ry7" userLabel="PZL Instruction Skip Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="puzzleInstructionSkipped:" destination="x8V-EA-1xX" id="CLO-fH-sfa"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -2319,12 +2379,25 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <imageView contentMode="scaleToFill" image="PZL07_howto.png" id="Ykh-Kp-QHB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PZL07_howto.png" id="Ykh-Kp-QHB">
                                 <rect key="frame" x="221.5" y="187" width="581" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="PZLhowto_Play.png" id="jHR-Gi-0V5">
+                                <rect key="frame" x="557" y="458" width="197" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="wvk-FF-lus" appends="YES" id="4UX-d5-6lp"/>
+                                    <outletCollection property="gestureRecognizers" destination="wvk-FF-lus" appends="YES" id="fOO-qU-cGk"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" image="PZLhowto_Skip.png" id="nk2-0j-PTV">
+                                <rect key="frame" x="283" y="458" width="218" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Tc9-mY-0qI" appends="YES" id="a9v-37-NEV"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -2394,6 +2467,8 @@
                         <outlet property="PZL07_miaow02b" destination="22X-p9-IAy" id="Qhn-wc-mAy"/>
                         <outlet property="PZL_DimBackground" destination="sD1-PK-Hbs" id="7ml-1P-CQ1"/>
                         <outlet property="PZL_Instruction" destination="Ykh-Kp-QHB" id="fqS-mY-2Jo"/>
+                        <outlet property="PZL_Instruction_Play" destination="jHR-Gi-0V5" id="DfR-9g-c0h"/>
+                        <outlet property="PZL_Instruction_Skip" destination="nk2-0j-PTV" id="2q5-fU-tUC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eX8-Yg-ShH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2405,6 +2480,11 @@
                 <tapGestureRecognizer id="wvk-FF-lus" userLabel="PZL Instruction Tap Gesture Recognizer">
                     <connections>
                         <action selector="puzzleInstructionTapped:" destination="NdI-bK-37a" id="AJz-Cf-USi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Tc9-mY-0qI" userLabel="PZL Instruction Skip Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="puzzleInstructionSkipped:" destination="NdI-bK-37a" id="7LS-Tn-ijE"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -2768,7 +2848,7 @@
                                     <outletCollection property="gestureRecognizers" destination="03Q-kG-NwS" appends="YES" id="E5w-bK-0ad"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="75n-Jf-N7m">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="75n-Jf-N7m">
                                 <rect key="frame" x="323" y="348" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -2776,7 +2856,7 @@
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="TNg-D7-R9B"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="fWV-kg-Y6z">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="fWV-kg-Y6z">
                                 <rect key="frame" x="408" y="478" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -2784,7 +2864,7 @@
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="oCM-zh-yiM"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="der-ks-M07">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="der-ks-M07">
                                 <rect key="frame" x="323" y="478" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -2792,7 +2872,7 @@
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="BLY-ap-Y0V"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="JXc-8O-4Zw">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="JXc-8O-4Zw">
                                 <rect key="frame" x="323" y="412" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -2800,7 +2880,7 @@
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="2zj-GZ-ngX"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="zm6-aU-I1P">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="zm6-aU-I1P">
                                 <rect key="frame" x="408" y="412" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -2808,14 +2888,14 @@
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="17t-bi-LOT"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="dOL-D7-qSF">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="dOL-D7-qSF">
                                 <rect key="frame" x="492" y="348" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="u7j-oF-4pT"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="8nt-Dg-W4l">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="8nt-Dg-W4l">
                                 <rect key="frame" x="408" y="348" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -2823,49 +2903,49 @@
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="uOu-Ou-E7P"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="mIm-Mr-wSd">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="mIm-Mr-wSd">
                                 <rect key="frame" x="493" y="478" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="JB6-5A-jDU"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="ctw-qy-QO7">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="ctw-qy-QO7">
                                 <rect key="frame" x="576" y="478" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="3pW-wJ-z5U"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="r9q-4P-6jZ">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="r9q-4P-6jZ">
                                 <rect key="frame" x="661" y="478" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="Auk-IK-BYe"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="rn1-z9-39G">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="rn1-z9-39G">
                                 <rect key="frame" x="661" y="412" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="7Vc-PA-Gb8"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="Ucy-Zi-o1K">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="Ucy-Zi-o1K">
                                 <rect key="frame" x="577" y="413" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="xuR-mz-gLB"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="gcm-yN-P2x">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="gcm-yN-P2x">
                                 <rect key="frame" x="577" y="347" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="Pld-uC-hPc"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" id="klG-eM-7lx">
+                            <imageView hidden="YES" contentMode="scaleToFill" id="klG-eM-7lx">
                                 <rect key="frame" x="661" y="347" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -6071,6 +6151,8 @@ After all, don’t we all see the world through different eyes?
         <image name="PZL09__BG2.jpg" width="899" height="768"/>
         <image name="PZL09__BG3.jpg" width="1863" height="768"/>
         <image name="PZL09_howto.png" width="581" height="395"/>
+        <image name="PZLhowto_Play.png" width="197" height="53"/>
+        <image name="PZLhowto_Skip.png" width="218" height="53"/>
         <image name="RateUs.png" width="94" height="122"/>
         <image name="STB_01.png" width="206" height="191"/>
         <image name="STB_02.png" width="206" height="192"/>
@@ -6300,6 +6382,8 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="PZL09_Miaow01_2" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="background1" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="background2" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="background3" candidateClass="UIImageView"/>
@@ -6355,6 +6439,8 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="PZL06_miaow02b" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="PPPuzzleThreeViewController" superclassName="GAITrackedViewController">
@@ -6451,6 +6537,8 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="PZL08_Reveal" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -6518,6 +6606,8 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="PZL07_miaow02b" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="hiddenImage" candidateClass="UIImageView"/>
             </relationships>
         </class>

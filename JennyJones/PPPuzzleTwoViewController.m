@@ -25,6 +25,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *PZL_DimBackground;
 @property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction;
+@property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction_Play;
+@property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction_Skip;
  
 @end
 
@@ -175,9 +177,20 @@
 	self.PZL_Instruction.userInteractionEnabled = NO;
 	self.PZL_DimBackground.hidden = YES;
 	[UIView animateWithDuration:0.5 animations:^{
-		self.PZL_Instruction.transform = CGAffineTransformMakeScale(0.0, 0.0);
+		[self puzzleInstructionImageTransformScale:0.0];
 	}];
 	[self.puzzleEngine startTimer];
+}
+
+- (IBAction)puzzleInstructionSkipped:(id)sender {
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (void) puzzleInstructionImageTransformScale: (float) x
+{
+	self.PZL_Instruction.transform = CGAffineTransformMakeScale(x, x);
+	self.PZL_Instruction_Play.transform = CGAffineTransformMakeScale(x, x);
+	self.PZL_Instruction_Skip.transform = CGAffineTransformMakeScale(x, x);
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -188,7 +201,6 @@
     self.puzzleTimer = [[PPWatchView alloc] initWatchView];
     [self.view addSubview:self.puzzleTimer];
 	
-	self.PZL_Instruction.userInteractionEnabled = NO;
 	self.PZL_DimBackground.alpha = 0.45;
 }
 
@@ -228,16 +240,14 @@
     self.puzzleEngine.delegate = self;
     [self.puzzleEngine startEngine];
 	
-	self.PZL_Instruction.transform = CGAffineTransformMakeScale(0.1, 0.1);
+	[self puzzleInstructionImageTransformScale:0.1];
 	
 	[UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-		self.PZL_Instruction.transform = CGAffineTransformMakeScale(1.3, 1.3);
+		[self puzzleInstructionImageTransformScale:1.3];
 	} completion:^(BOOL finished) {
 		[UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-			self.PZL_Instruction.transform = CGAffineTransformMakeScale(1.0, 1.0);
-		} completion:^(BOOL finished) {
-			self.PZL_Instruction.userInteractionEnabled = YES;
-		}];
+			[self puzzleInstructionImageTransformScale:1.0];
+		} completion:nil];
 	}];
 }
 
@@ -333,6 +343,8 @@
     [self setPuzzleTimer:nil];
 
     [self setHiddenImage:nil];
+	[self setPZL_Instruction_Play:nil];
+	[self setPZL_Instruction_Skip:nil];
     [super viewDidUnload];
 
 }

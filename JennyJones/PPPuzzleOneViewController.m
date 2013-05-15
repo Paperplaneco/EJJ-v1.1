@@ -25,6 +25,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction;
 @property (weak, nonatomic) IBOutlet UIImageView *PZL_DimBackground;
+@property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction_Play;
+@property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction_Skip;
 
 @end 
 
@@ -148,9 +150,20 @@
 	self.PZL_Instruction.userInteractionEnabled = NO;
 	self.PZL_DimBackground.hidden = YES;
 	[UIView animateWithDuration:0.5 animations:^{
-		self.PZL_Instruction.transform = CGAffineTransformMakeScale(0.0, 0.0);
+		[self puzzleInstructionImageTransformScale:0.0];
 	}];
 	[self.puzzleEngine startTimer];
+}
+
+- (IBAction)puzzleInstructionSkipped:(UITapGestureRecognizer *)sender {
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (void) puzzleInstructionImageTransformScale: (float) x
+{
+	self.PZL_Instruction.transform = CGAffineTransformMakeScale(x, x);
+	self.PZL_Instruction_Play.transform = CGAffineTransformMakeScale(x, x);
+	self.PZL_Instruction_Skip.transform = CGAffineTransformMakeScale(x, x);
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -161,7 +174,6 @@
     self.puzzleTimer = [[PPWatchView alloc] initWatchView];
     [self.view addSubview:self.puzzleTimer];
 	
-	self.PZL_Instruction.userInteractionEnabled = NO;
 	self.PZL_DimBackground.alpha = 0.45;
 }
 
@@ -196,13 +208,13 @@
     self.physicsUtility.effectedBody = self.PZL06_miaow02a;
     [self.physicsUtility startPhysicsEngine];
 	
-	self.PZL_Instruction.transform = CGAffineTransformMakeScale(0.1, 0.1);
+	[self puzzleInstructionImageTransformScale:0.1];
 	
 	[UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-		self.PZL_Instruction.transform = CGAffineTransformMakeScale(1.3, 1.3);
+		[self puzzleInstructionImageTransformScale:1.3];
 	} completion:^(BOOL finished) {
 		[UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-			self.PZL_Instruction.transform = CGAffineTransformMakeScale(1.0, 1.0);
+			[self puzzleInstructionImageTransformScale:1.0];
 		} completion:^(BOOL finished) {
 			self.PZL_Instruction.userInteractionEnabled = YES;
 		}];
@@ -224,9 +236,11 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)viewDidUnload
+- (void) viewWillDisappear:(BOOL)animated
 {
-    [self setPZL06_Reveal:nil];
+	[super viewWillDisappear:animated];
+	
+	[self setPZL06_Reveal:nil];
     [self setPZL06_BG:nil];
     [self setPZL06_01a:nil];
     [self setPZL06_01b:nil];
@@ -264,6 +278,12 @@
     [self setPZL06_12b:nil];
     [self setPZL06_miaow02b:nil];
     [self setPZL06_miaow02a:nil];
+	[self setPZL_Instruction_Play:nil];
+	[self setPZL_Instruction_Skip:nil];
+}
+
+- (void)viewDidUnload
+{
     [super viewDidUnload];
     NSLog(@"first puzzle unloaded");
     // Release any retained subviews of the main view.

@@ -30,6 +30,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *PZL_DimBackground;
 @property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction;
+@property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction_Play;
+@property (weak, nonatomic) IBOutlet UIImageView *PZL_Instruction_Skip;
 
 @end
 
@@ -138,11 +140,22 @@
 	self.PZL_Instruction.userInteractionEnabled = NO;
 	self.PZL_DimBackground.hidden = YES;
 	[UIView animateWithDuration:0.5 animations:^{
-		self.PZL_Instruction.transform = CGAffineTransformMakeScale(0.0, 0.0);
+		[self puzzleInstructionImageTransformScale:0.0];
 	}];
 	
 	self.scroller.scrollEnabled = YES;
 	[self.puzzleEngine startTimer];
+}
+
+- (IBAction)puzzleInstructionSkipped:(UITapGestureRecognizer *)sender {
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (void) puzzleInstructionImageTransformScale: (float) x
+{
+	self.PZL_Instruction.transform = CGAffineTransformMakeScale(x, x);
+	self.PZL_Instruction_Play.transform = CGAffineTransformMakeScale(x, x);
+	self.PZL_Instruction_Skip.transform = CGAffineTransformMakeScale(x, x);
 }
 
 - (IBAction)miaowTapped:(UITapGestureRecognizer *)sender
@@ -159,10 +172,12 @@
 	[self.physicsUtility applyForceToEffectedBody];
 	[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(resetMiaow) userInfo:nil repeats:NO];
 }
+
 -(void) temporaryTapCallback:(UITapGestureRecognizer *)sender
 {
     NSLog(@"duplicate object tapped");
 }
+
 - (void) resetMiaow
 {
 	[self.physicsUtility resetEffectedBody];
@@ -356,12 +371,13 @@
     self.scroller.contentOffset = CGPointMake(self.background2.center.x, 0.0);
 	
     self.PZL_Instruction.center = CGPointMake(self.background2.frame.origin.x + 962, 384);
+	self.PZL_Instruction_Play.center = CGPointMake(self.background2.frame.origin.x + 1096, 490);
+	self.PZL_Instruction_Skip.center = CGPointMake(self.background2.frame.origin.x + 850, 490);
 	self.PZL_DimBackground.center = CGPointMake(self.background2.frame.origin.x + 962, 384);
 	
-	self.PZL_Instruction.userInteractionEnabled = NO;
 	self.PZL_DimBackground.alpha = 0.45;
 	
-	self.PZL_Instruction.transform = CGAffineTransformMakeScale(0.1, 0.1);
+	[self puzzleInstructionImageTransformScale:0.1];
 }
 
 -(void) viewDidAppear:(BOOL)animated
@@ -473,21 +489,13 @@
 	self.lastX = -INFINITY;
 	
 	[UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-		self.PZL_Instruction.transform = CGAffineTransformMakeScale(1.3, 1.3);
+		[self puzzleInstructionImageTransformScale:1.3];
 	} completion:^(BOOL finished) {
 		[UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-			self.PZL_Instruction.transform = CGAffineTransformMakeScale(1.0, 1.0);
-		} completion:^(BOOL finished) {
-			self.PZL_Instruction.userInteractionEnabled = YES;
-		}];
+			[self puzzleInstructionImageTransformScale:1.0];
+		} completion:nil];
 	}];
  
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewDidUnload {
@@ -597,6 +605,8 @@
     [self setAimages:nil];
     [self setCimages:nil];
     [self setPZL09_21b:nil];
+	[self setPZL_Instruction_Play:nil];
+	[self setPZL_Instruction_Skip:nil];
     [super viewDidUnload];
 }
 @end
