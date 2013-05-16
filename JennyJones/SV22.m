@@ -10,17 +10,27 @@
 #import "OBShapedButton.h"
 
 @interface SV22 ()
+{
+	float scale;
+    NSTimer *basketTimer;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *CreditRoll;
 @property (weak, nonatomic) IBOutlet OBShapedButton *RateUs;
 @property (weak, nonatomic) IBOutlet OBShapedButton *Restart;
+@property (weak, nonatomic) IBOutlet UIImageView *ferrisLight;
+@property (weak, nonatomic) IBOutlet UIImageView *tentLights01;
+@property (weak, nonatomic) IBOutlet UIImageView *tentLights02;
+@property (weak, nonatomic) IBOutlet UIImageView *basket;
 
+@property (nonatomic) NSTimer *basketTimer;
 @property NSUserDefaults *defaults;
 
 @end
 
 @implementation SV22
 
+@synthesize basketTimer = _basketTimer;
 @synthesize defaults = _defaults;
 
 - (IBAction)rateUs:(id)sender {
@@ -40,6 +50,31 @@
 	[self.defaults synchronize];
 	
     [[NSNotificationCenter defaultCenter] postNotificationName:@"Page" object:@"user selected page"];
+}
+
+- (void) lightsTwinkling: (NSTimer *) tmr
+{
+    UIImageView *imageView = [tmr userInfo];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        if (imageView.alpha == 1.0) imageView.alpha = 0.0;
+        else imageView.alpha = 1.0;
+    }];
+}
+
+- (void) basketMoving
+{
+    scale -= 0.0005;
+    if (scale < 0.4) [self.basketTimer invalidate];
+    self.basket.transform = CGAffineTransformMakeScale(scale, scale);
+}
+
+- (void) lightsStartTwinkling
+{
+    // Lights twinkling
+    [NSTimer scheduledTimerWithTimeInterval:0.9 target:self selector:@selector(lightsTwinkling:) userInfo:self.tentLights01 repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(lightsTwinkling:) userInfo:self.tentLights02 repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:1.2 target:self selector:@selector(lightsTwinkling:) userInfo:self.ferrisLight repeats:YES];
 }
 
 - (void) navShow:(NSNotification *) pNotification
@@ -63,27 +98,18 @@
 	self.defaults = [NSUserDefaults standardUserDefaults];
 	
 	[self.SFX07 setAudioFile:@"21_credits.mp3"];
+	if ([[self.defaults objectForKey:@"sound effect player"] isEqualToString:@"YES"]) [self.SFX07 play];
 	
-	self.CreditRoll.frame = CGRectMake(self.CreditRoll.frame.origin.x, self.view.frame.size.height, self.CreditRoll.frame.size.width, self.CreditRoll.frame.size.height);
-	self.RateUs.alpha = 0.0;
-	self.Restart.alpha = 0.0;
+	scale = 1.0;
+    
+    self.basket.layer.anchorPoint = CGPointMake(0, 0);
+    self.basket.frame = CGRectMake(0, 0, self.basket.frame.size.width, self.basket.frame.size.height);
+    
+    [self lightsStartTwinkling];
+    
+    self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMoving) userInfo:nil repeats:YES];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
-}
-
-- (void) viewDidAppear:(BOOL)animated
-{
-	[super viewDidAppear:animated];
-	
-	if ([[self.defaults objectForKey:@"sound effect player"] isEqualToString:@"YES"]) [self.SFX07 play];
-	[UIView animateWithDuration:10.0 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-		self.CreditRoll.center = CGPointMake(self.CreditRoll.center.x, self.view.frame.size.height / 2);
-	} completion:^(BOOL finished) {
-		[UIView animateWithDuration:1.0 animations:^{
-			self.RateUs.alpha = 1.0;
-			self.Restart.alpha = 1.0;
-		}];
-	}];
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -93,7 +119,12 @@
 	[self setCreditRoll:nil];
 	[self setRateUs:nil];
 	[self setRestart:nil];
+	[self setFerrisLight:nil];
+	[self setTentLights01:nil];
+	[self setTentLights02:nil];
+	[self setBasket:nil];
 	
+	self.basketTimer = nil;
 	self.defaults = nil;
 }
 

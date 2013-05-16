@@ -4682,6 +4682,22 @@ It’s possible she never really mastered the art of riding a bike because she f
                                 <rect key="frame" x="54" y="-1" width="924" height="737"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="21_FerrisLights.png" id="452-uh-aQ5">
+                                <rect key="frame" x="179.5" y="545" width="137" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="21_TentLights01.png" id="9y5-oo-P62">
+                                <rect key="frame" x="107.5" y="681" width="245" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="21_TentLights02.png" id="fkD-Xm-bHY">
+                                <rect key="frame" x="145.5" y="677.5" width="177" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="21_Basket.png" id="DFF-B5-hyh">
+                                <rect key="frame" x="17.5" y="-7.5" width="537" height="599"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Yd-Nm-HV2" customClass="OBShapedButton">
                                 <rect key="frame" x="728" y="537" width="94" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4735,6 +4751,10 @@ It’s possible she never really mastered the art of riding a bike because she f
                         <outlet property="CreditRoll" destination="QmB-4U-QOA" id="p5f-9N-pMi"/>
                         <outlet property="RateUs" destination="4Yd-Nm-HV2" id="Klk-lO-SFo"/>
                         <outlet property="Restart" destination="YRj-MP-sno" id="SC2-EC-npp"/>
+                        <outlet property="basket" destination="DFF-B5-hyh" id="4tt-kr-sST"/>
+                        <outlet property="ferrisLight" destination="452-uh-aQ5" id="iHS-CC-Dze"/>
+                        <outlet property="tentLights01" destination="9y5-oo-P62" id="6U0-io-eHg"/>
+                        <outlet property="tentLights02" destination="fkD-Xm-bHY" id="dNO-o0-vTu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqi-C4-kwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -6363,6 +6383,7 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="SV19" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV20" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV21" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="SV22" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -7047,6 +7068,10 @@ After all, don’t we all see the world through different eyes?
                 <relationship kind="outlet" name="CreditRoll" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="RateUs" candidateClass="OBShapedButton"/>
                 <relationship kind="outlet" name="Restart" candidateClass="OBShapedButton"/>
+                <relationship kind="outlet" name="basket" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ferrisLight" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tentLights01" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tentLights02" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>
