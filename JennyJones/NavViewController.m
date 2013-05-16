@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *SV01;
 @property (weak, nonatomic) IBOutlet UIImageView *SV02;
 @property (weak, nonatomic) IBOutlet UIImageView *SV03;
+@property (weak, nonatomic) IBOutlet UIImageView *SV03b;
+@property (weak, nonatomic) IBOutlet UIImageView *SV03c;
 @property (weak, nonatomic) IBOutlet UIImageView *SV04;
 @property (weak, nonatomic) IBOutlet UIImageView *SV05;
 @property (weak, nonatomic) IBOutlet UIImageView *SV06;
@@ -37,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *SV19;
 @property (weak, nonatomic) IBOutlet UIImageView *SV20;
 @property (weak, nonatomic) IBOutlet UIImageView *SV21;
+@property (weak, nonatomic) IBOutlet UIImageView *SV22;
 
 @property (weak, nonatomic) IBOutlet UIImageView *SFX;
 @property (weak, nonatomic) IBOutlet UIImageView *Readaloud;
@@ -151,6 +154,14 @@
 	[self removeNavViewAndFlipToPage:3];
 }
 
+- (IBAction)SV03bSelected:(UITapGestureRecognizer *)sender {
+	[self removeNavViewAndFlipToPage:4];
+}
+
+- (IBAction)SV03cSelected:(UITapGestureRecognizer *)sender {
+	[self removeNavViewAndFlipToPage:5];
+}
+
 - (IBAction)SV04Selected:(UITapGestureRecognizer *)sender
 {
 	[self removeNavViewAndFlipToPage:6];
@@ -241,6 +252,10 @@
 	[self removeNavViewAndFlipToPage:23];
 }
 
+- (IBAction)SV22Selected:(UITapGestureRecognizer *)sender {
+	[self removeNavViewAndFlipToPage:24];
+}
+
 - (void) removeNavViewAndFlipToPage:(int)pageNumber
 {
 	[self.defaults setObject:@"NO" forKey:@"nav showing"];
@@ -275,60 +290,69 @@
 			break;
 		case 3:
 			self.Bookmark.center = CGPointMake(self.SV03.center.x + 72, self.SV03.center.y - 62);
-			break;
+			break;			
 		case 4:
-			self.Bookmark.center = CGPointMake(self.SV04.center.x + 72, self.SV04.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV03b.center.x + 72, self.SV03b.center.y - 62);
 			break;
 		case 5:
-			self.Bookmark.center = CGPointMake(self.SV05.center.x + 72, self.SV05.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV03c.center.x + 72, self.SV03c.center.y - 62);
 			break;
 		case 6:
-			self.Bookmark.center = CGPointMake(self.SV06.center.x + 72, self.SV06.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV04.center.x + 72, self.SV04.center.y - 62);
 			break;
 		case 7:
-			self.Bookmark.center = CGPointMake(self.SV07.center.x + 72, self.SV07.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV05.center.x + 72, self.SV05.center.y - 62);
 			break;
 		case 8:
-			self.Bookmark.center = CGPointMake(self.SV08.center.x + 72, self.SV08.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV06.center.x + 72, self.SV06.center.y - 62);
 			break;
 		case 9:
-			self.Bookmark.center = CGPointMake(self.SV09.center.x + 72, self.SV09.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV07.center.x + 72, self.SV07.center.y - 62);
 			break;
 		case 10:
-			self.Bookmark.center = CGPointMake(self.SV10.center.x + 72, self.SV10.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV08.center.x + 72, self.SV08.center.y - 62);
 			break;
 		case 11:
-			self.Bookmark.center = CGPointMake(self.SV11.center.x + 72, self.SV11.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV09.center.x + 72, self.SV09.center.y - 62);
 			break;
 		case 12:
-			self.Bookmark.center = CGPointMake(self.SV12.center.x + 72, self.SV12.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV10.center.x + 72, self.SV10.center.y - 62);
 			break;
 		case 13:
-			self.Bookmark.center = CGPointMake(self.SV13.center.x + 72, self.SV13.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV11.center.x + 72, self.SV11.center.y - 62);
 			break;
 		case 14:
-			self.Bookmark.center = CGPointMake(self.SV14.center.x + 72, self.SV14.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV12.center.x + 72, self.SV12.center.y - 62);
 			break;
 		case 15:
-			self.Bookmark.center = CGPointMake(self.SV15.center.x + 72, self.SV15.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV13.center.x + 72, self.SV13.center.y - 62);
 			break;
 		case 16:
-			self.Bookmark.center = CGPointMake(self.SV16.center.x + 72, self.SV16.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV14.center.x + 72, self.SV14.center.y - 62);
 			break;
 		case 17:
-			self.Bookmark.center = CGPointMake(self.SV17.center.x + 72, self.SV17.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV15.center.x + 72, self.SV15.center.y - 62);
 			break;
 		case 18:
-			self.Bookmark.center = CGPointMake(self.SV18.center.x + 72, self.SV18.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV16.center.x + 72, self.SV16.center.y - 62);
 			break;
 		case 19:
-			self.Bookmark.center = CGPointMake(self.SV19.center.x + 72, self.SV19.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV17.center.x + 72, self.SV17.center.y - 62);
 			break;
 		case 20:
-			self.Bookmark.center = CGPointMake(self.SV20.center.x + 72, self.SV20.center.y - 62);
+			self.Bookmark.center = CGPointMake(self.SV18.center.x + 72, self.SV18.center.y - 62);
 			break;
 		case 21:
+			self.Bookmark.center = CGPointMake(self.SV19.center.x + 72, self.SV19.center.y - 62);
+			break;
+		case 22:
+			self.Bookmark.center = CGPointMake(self.SV20.center.x + 72, self.SV20.center.y - 62);
+			break;
+		case 23:
 			self.Bookmark.center = CGPointMake(self.SV21.center.x + 72, self.SV21.center.y - 62);
+			break;
+		case 24:
+			self.Bookmark.center = CGPointMake(self.SV22.center.x + 72, self.SV22.center.y - 62);
 			break;
 		default:
 			break;
@@ -375,4 +399,10 @@
 	self.SFX01 = nil;
 }
 
+- (void)viewDidUnload {
+	[self setSV03b:nil];
+	[self setSV03c:nil];
+	[self setSV22:nil];
+	[super viewDidUnload];
+}
 @end

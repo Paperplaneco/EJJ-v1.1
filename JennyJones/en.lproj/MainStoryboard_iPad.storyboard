@@ -796,7 +796,7 @@
                                             <outletCollection property="gestureRecognizers" destination="uYt-N3-u96" appends="YES" id="9mZ-hZ-wfA"/>
                                         </connections>
                                     </imageView>
-                                    <imageView contentMode="center" image="STB_04.png" id="OjQ-Uq-26p">
+                                    <imageView contentMode="center" image="STB_4a.png" id="OjQ-Uq-26p">
                                         <rect key="frame" x="701" y="8" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
@@ -804,13 +804,21 @@
                                             <outletCollection property="gestureRecognizers" destination="2qk-Eo-93P" appends="YES" id="ASg-GU-Vl3"/>
                                         </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="XEk-03-K5t">
+                                    <imageView contentMode="scaleToFill" image="STB_4b.png" id="XEk-03-K5t">
                                         <rect key="frame" x="11" y="234" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7md-Yq-EFS" appends="YES" id="acY-QB-0pb"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="dVu-Kq-fuu">
+                                    <imageView contentMode="scaleToFill" image="STB_4c.png" id="dVu-Kq-fuu">
                                         <rect key="frame" x="241" y="234" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YzR-By-VfO" appends="YES" id="AwM-ih-CZO"/>
+                                        </connections>
                                     </imageView>
                                     <imageView contentMode="center" image="STB_05.png" id="leu-5y-awf">
                                         <rect key="frame" x="471" y="234" width="206" height="192"/>
@@ -956,9 +964,13 @@
                                             <outletCollection property="gestureRecognizers" destination="4jn-uX-G5U" appends="YES" id="O7D-6q-nF9"/>
                                         </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="9Ch-1q-H7W">
+                                    <imageView contentMode="scaleToFill" image="STB_23.png" id="9Ch-1q-H7W">
                                         <rect key="frame" x="11" y="1363" width="206" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="dMH-wA-rA2" appends="YES" id="FBk-Yh-bIy"/>
+                                        </connections>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="STB_bookmark.png" id="WVN-qV-jsx">
                                         <rect key="frame" x="182" y="16" width="27" height="52"/>
@@ -995,6 +1007,8 @@
                         <outlet property="SV01" destination="p38-df-vcI" id="Swg-ME-Elj"/>
                         <outlet property="SV02" destination="FNK-0d-JsM" id="cDC-Cg-RYe"/>
                         <outlet property="SV03" destination="OjQ-Uq-26p" id="05p-KR-2Pe"/>
+                        <outlet property="SV03b" destination="XEk-03-K5t" id="SEd-hz-lEK"/>
+                        <outlet property="SV03c" destination="dVu-Kq-fuu" id="ghv-Fk-5Xe"/>
                         <outlet property="SV04" destination="leu-5y-awf" id="GUI-kf-YuY"/>
                         <outlet property="SV05" destination="VUG-iI-krw" id="b0r-ib-BDy"/>
                         <outlet property="SV06" destination="lFX-pi-uiR" id="PGm-p1-7gk"/>
@@ -1013,6 +1027,7 @@
                         <outlet property="SV19" destination="VsB-Cj-Vfs" id="wl1-W8-XIj"/>
                         <outlet property="SV20" destination="dcI-qH-hdj" id="fp4-pr-cfW"/>
                         <outlet property="SV21" destination="8Ng-ZR-r6T" id="vOq-cm-SZU"/>
+                        <outlet property="SV22" destination="9Ch-1q-H7W" id="flR-Wd-Vjt"/>
                         <outlet property="scrollView" destination="XMj-PL-gEJ" id="8yT-Oy-I5R"/>
                     </connections>
                 </viewController>
@@ -1147,6 +1162,21 @@
                         <action selector="ReadaloudPanned:" destination="dun-ym-nig" id="Exr-xs-qTc"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="7md-Yq-EFS" userLabel="STB03b Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="SV03bSelected:" destination="dun-ym-nig" id="OVr-UR-WDv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YzR-By-VfO" userLabel="STB03c Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="SV03cSelected:" destination="dun-ym-nig" id="uSm-c5-ChI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dMH-wA-rA2" userLabel="STB23 Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="SV22Selected:" destination="dun-ym-nig" id="qcl-w6-Z6f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="103" y="3951"/>
         </scene>
@@ -6222,7 +6252,6 @@ After all, don’t we all see the world through different eyes?
         <image name="STB_01.png" width="206" height="191"/>
         <image name="STB_02.png" width="206" height="192"/>
         <image name="STB_03.png" width="206" height="192"/>
-        <image name="STB_04.png" width="206" height="190"/>
         <image name="STB_05.png" width="206" height="190"/>
         <image name="STB_06.png" width="206" height="190"/>
         <image name="STB_07.png" width="206" height="190"/>
@@ -6241,6 +6270,10 @@ After all, don’t we all see the world through different eyes?
         <image name="STB_20.png" width="206" height="191"/>
         <image name="STB_21.png" width="206" height="186"/>
         <image name="STB_22.png" width="206" height="187"/>
+        <image name="STB_23.png" width="207" height="190"/>
+        <image name="STB_4a.png" width="207" height="190"/>
+        <image name="STB_4b.png" width="207" height="190"/>
+        <image name="STB_4c.png" width="207" height="190"/>
         <image name="STB_bg.jpg" width="1024" height="768"/>
         <image name="STB_bookmark.png" width="27" height="52"/>
         <image name="STB_btn01.png" width="40" height="42"/>
@@ -6304,38 +6337,14 @@ After all, don’t we all see the world through different eyes?
         <class className="NavViewController" superclassName="PPAnimatingViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NavViewController.h"/>
             <relationships>
-                <relationship kind="action" name="ReadaloudPanned:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="ReadaloudTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SFXPanned:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="SFXTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV01Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV02Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV03Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV04Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV05Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV06Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV07Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV08Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV09Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV0Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV10Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV11Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV12Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV13Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV14Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV15Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV16Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV17Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV18Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV19Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV20Selected:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="SV21Selected:" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="outlet" name="Bookmark" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Readaloud" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SFX" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV01" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV02" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV03" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="SV03b" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="SV03c" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV04" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV05" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="SV06" candidateClass="UIImageView"/>
