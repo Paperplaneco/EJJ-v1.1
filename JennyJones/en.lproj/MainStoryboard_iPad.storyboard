@@ -3321,7 +3321,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b5j-6H-aDC">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b5j-6H-aDC">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3336,7 +3336,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                     <action selector="btnPrev_Tapped:" destination="RRw-1u-gEE" eventType="touchUpInside" id="vEb-1F-qiQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="xC3-sr-XaB">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="xC3-sr-XaB">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3360,6 +3360,8 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                         <outlet property="BG" destination="6nu-E3-1wA" id="DEr-ER-bxK"/>
                         <outlet property="Label" destination="Liq-Ai-uCk" id="1dB-HD-0g6"/>
                         <outlet property="Miao" destination="Dx0-fw-Ny2" id="Cqb-K5-8aL"/>
+                        <outlet property="btnBack" destination="b5j-6H-aDC" id="Dkh-xo-7H0"/>
+                        <outlet property="btnNext" destination="xC3-sr-XaB" id="I0D-nw-Nlc"/>
                         <outlet property="scrollView" destination="zyJ-pc-701" id="YdU-zw-LVI"/>
                     </connections>
                 </viewController>
@@ -3399,7 +3401,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                         <rect key="frame" x="86" y="142" width="175" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0N-Dg-FXt">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0N-Dg-FXt">
                                         <rect key="frame" x="14" y="676" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3414,7 +3416,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                             <action selector="btnPrev_Tapped:" destination="fLb-hs-DpG" eventType="touchUpInside" id="VaN-Es-mZ5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UhQ-Gw-hEs">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UhQ-Gw-hEs">
                                         <rect key="frame" x="932" y="676" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3444,6 +3446,8 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                         <outlet property="ViewAContainer" destination="6BJ-LQ-Oa9" id="FpC-Zi-SLK"/>
                         <outlet property="ViewBContainer" destination="bGW-Bq-cd6" id="gt8-2J-jxw"/>
                         <outlet property="ViewCContainer" destination="JXT-q1-3sA" id="LNc-Dr-09m"/>
+                        <outlet property="btnBack" destination="h0N-Dg-FXt" id="xJE-rs-YCP"/>
+                        <outlet property="btnNext" destination="UhQ-Gw-hEs" id="9kf-1i-3ro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9z-Ib-ev7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3519,7 +3523,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                 <rect key="frame" x="35" y="78" width="942" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xQF-YY-vc5">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xQF-YY-vc5">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3534,7 +3538,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                     <action selector="btnPrev_Tapped:" destination="3ie-t0-Jre" eventType="touchUpInside" id="MAP-Bl-PtP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QVG-v8-fog">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QVG-v8-fog">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3606,7 +3610,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                 <rect key="frame" x="839" y="620" width="71" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o8X-Zf-Ujk">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o8X-Zf-Ujk">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3621,7 +3625,7 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                                     <action selector="btnPrev_Tapped:" destination="Ze0-be-RNe" eventType="touchUpInside" id="AfB-Pt-CJC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jRf-gY-c4g">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jRf-gY-c4g">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3646,6 +3650,8 @@ Pick up any telephone book, look under ‘J’ and there’s Jones, Jones, Jones
                         <outlet property="BugSquare" destination="ecF-Ox-cHs" id="ySG-xO-l1J"/>
                         <outlet property="Round" destination="vcM-Tg-7Hg" id="BF8-gi-Ioc"/>
                         <outlet property="Square" destination="HBa-C7-cTA" id="i73-zs-WgK"/>
+                        <outlet property="btnBack" destination="o8X-Zf-Ujk" id="C8g-8K-TO6"/>
+                        <outlet property="btnNext" destination="jRf-gY-c4g" id="XUR-lj-gye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="All-Xz-vuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3722,8 +3728,8 @@ So did millions of other little girls. </string>
                                 <rect key="frame" x="113.5" y="309" width="517" height="302"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QaO-Ir-M0x">
-                                <rect key="frame" x="14" y="676" width="80" height="80"/>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QaO-Ir-M0x">
+                                <rect key="frame" x="10" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Back" image="Nav_L_UP.png">
@@ -3737,7 +3743,7 @@ So did millions of other little girls. </string>
                                     <action selector="btnPrev_Tapped:" destination="oaW-et-53k" eventType="touchUpInside" id="hJU-IK-hPf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TaG-tQ-NqX">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TaG-tQ-NqX">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3835,7 +3841,7 @@ but it was square.</string>
                                     <outletCollection property="gestureRecognizers" destination="b9K-5S-3S3" appends="YES" id="fqO-u9-FkW"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jOZ-OU-cu2">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jOZ-OU-cu2">
                                 <rect key="frame" x="14.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3850,7 +3856,7 @@ but it was square.</string>
                                     <action selector="btnPrev_Tapped:" destination="yeI-lh-upG" eventType="touchUpInside" id="Ey1-ed-pQa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ovQ-Mc-DOb">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ovQ-Mc-DOb">
                                 <rect key="frame" x="932.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3966,7 +3972,7 @@ Jenny would have to choose between square oranges, square apples, square apricot
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2eG-Ab-GwP">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2eG-Ab-GwP">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3981,7 +3987,7 @@ Jenny would have to choose between square oranges, square apples, square apricot
                                     <action selector="btnPrev_Tapped:" destination="QKX-2e-s4Q" eventType="touchUpInside" id="PCc-JW-1dc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mj2-6v-Twc">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mj2-6v-Twc">
                                 <rect key="frame" x="931" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4023,6 +4029,8 @@ Jenny would have to choose between square oranges, square apples, square apricot
                         <outlet property="Label" destination="2e3-Oe-UHa" id="4H8-UP-ric"/>
                         <outlet property="TryAgainMessage" destination="E1l-r9-9mr" id="BfB-JK-lc8"/>
                         <outlet property="WinMessage" destination="99X-n6-EZ7" id="aix-JY-qWF"/>
+                        <outlet property="btnBack" destination="2eG-Ab-GwP" id="4tt-uq-uvj"/>
+                        <outlet property="btnNext" destination="Mj2-6v-Twc" id="U5j-AI-x6d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffd-6W-zSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4102,7 +4110,7 @@ Their little square eyes always followed her too. </string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L7J-OL-G8k">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="L7J-OL-G8k">
                                 <rect key="frame" x="14.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4117,7 +4125,7 @@ Their little square eyes always followed her too. </string>
                                     <action selector="btnPrev_Tapped:" destination="JHY-3y-Xrv" eventType="touchUpInside" id="kCA-ON-bsl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SHh-u3-3i5">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SHh-u3-3i5">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4144,6 +4152,8 @@ Their little square eyes always followed her too. </string>
                         <outlet property="Fish02" destination="Rfx-BY-b5k" id="3wQ-TG-CgU"/>
                         <outlet property="Fish03" destination="cXj-9d-iRZ" id="jbd-ZP-skP"/>
                         <outlet property="Label" destination="zkp-gn-qXB" id="0Ub-E9-IXm"/>
+                        <outlet property="btnBack" destination="L7J-OL-G8k" id="RAn-0u-jCk"/>
+                        <outlet property="btnNext" destination="SHh-u3-3i5" id="yaO-hv-awk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkt-mH-pwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4216,7 +4226,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                                 <rect key="frame" x="693" y="570" width="240" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MPW-e0-cmr">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MPW-e0-cmr">
                                 <rect key="frame" x="14.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4231,7 +4241,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                                     <action selector="btnPrev_Tapped:" destination="ybU-Ih-JHm" eventType="touchUpInside" id="7Io-1z-OZb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fiZ-Iw-mFA">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fiZ-Iw-mFA">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4254,6 +4264,8 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                         <outlet property="Dessert" destination="BOL-Sj-1XM" id="5Sq-x2-3Sq"/>
                         <outlet property="Label" destination="iQc-OU-VOH" id="0B9-6c-wmO"/>
                         <outlet property="Oops" destination="DcO-L5-MgC" id="7qg-ti-1z0"/>
+                        <outlet property="btnBack" destination="MPW-e0-cmr" id="nfC-LT-cCP"/>
+                        <outlet property="btnNext" destination="fiZ-Iw-mFA" id="YuL-ld-Dxe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eR-PO-9BL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4298,7 +4310,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KIN-YH-EFD">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KIN-YH-EFD">
                                 <rect key="frame" x="13.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4313,7 +4325,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                                     <action selector="btnPrev_Tapped:" destination="4Yi-3W-V5N" eventType="touchUpInside" id="btI-D5-nz1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rj3-vJ-De1">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rj3-vJ-De1">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4336,6 +4348,8 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                         <outlet property="Label" destination="Jjv-Rq-ijI" id="Dhh-0Y-TiS"/>
                         <outlet property="Table01" destination="yDY-wL-Xlu" id="jzB-7C-sEb"/>
                         <outlet property="Table02" destination="hfO-t7-RVy" id="hoF-sf-Obf"/>
+                        <outlet property="btnBack" destination="KIN-YH-EFD" id="8Aw-Hq-Qa7"/>
+                        <outlet property="btnNext" destination="rj3-vJ-De1" id="BTC-sI-daU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fby-se-QDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4419,7 +4433,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kWn-r8-qma">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kWn-r8-qma">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4434,7 +4448,7 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                                     <action selector="btnPrev_Tapped:" destination="nyH-BN-Vg9" eventType="touchUpInside" id="udd-ai-yW7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7r9-rD-eCM">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7r9-rD-eCM">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4465,6 +4479,8 @@ Imagine tucking into square peas, square tomatoes and square corn on the cob.  O
                         <outlet property="Miao02" destination="c4a-ZK-y7A" id="41b-9C-EsV"/>
                         <outlet property="Plane" destination="KWs-2e-Ucu" id="tZO-5b-09a"/>
                         <outlet property="PlaneBoy" destination="Wq8-Ir-vSO" id="2VU-AE-0O0"/>
+                        <outlet property="btnBack" destination="kWn-r8-qma" id="a1D-eX-I4K"/>
+                        <outlet property="btnNext" destination="7r9-rD-eCM" id="WTP-08-p3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AG3-om-OHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4595,7 +4611,7 @@ It’s possible she never really mastered the art of riding a bike because she f
                                 <rect key="frame" x="753" y="495" width="192" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hfq-4b-H5f">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hfq-4b-H5f">
                                 <rect key="frame" x="14.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4610,7 +4626,7 @@ It’s possible she never really mastered the art of riding a bike because she f
                                     <action selector="btnPrev_Tapped:" destination="Mob-Bb-IYu" eventType="touchUpInside" id="hEE-fg-C6c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Z2-aA-mjO">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Z2-aA-mjO">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4649,6 +4665,8 @@ It’s possible she never really mastered the art of riding a bike because she f
                         <outlet property="Miao02" destination="TLj-hz-5UC" id="OJh-e2-MUM"/>
                         <outlet property="PedalFix" destination="mwj-ih-oYr" id="coJ-bi-kjB"/>
                         <outlet property="PedalTurn" destination="DUI-1F-rPw" id="Rmd-K4-NH6"/>
+                        <outlet property="btnBack" destination="hfq-4b-H5f" id="jBK-fC-2Z2"/>
+                        <outlet property="btnNext" destination="9Z2-aA-mjO" id="8Vj-fc-08M"/>
                         <outlet property="superView" destination="Slm-w7-B00" id="4nw-JT-W9u"/>
                     </connections>
                 </viewController>
@@ -4728,7 +4746,7 @@ It’s possible she never really mastered the art of riding a bike because she f
                                     <action selector="startAgain:" destination="cWi-8i-AUG" eventType="touchUpInside" id="vgk-qi-lYo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EDZ-Ox-twg" customClass="OBShapedButton">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EDZ-Ox-twg" customClass="OBShapedButton">
                                 <rect key="frame" x="22" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4752,6 +4770,7 @@ It’s possible she never really mastered the art of riding a bike because she f
                         <outlet property="RateUs" destination="4Yd-Nm-HV2" id="Klk-lO-SFo"/>
                         <outlet property="Restart" destination="YRj-MP-sno" id="SC2-EC-npp"/>
                         <outlet property="basket" destination="DFF-B5-hyh" id="4tt-kr-sST"/>
+                        <outlet property="btnBack" destination="EDZ-Ox-twg" id="NB0-yQ-iPM"/>
                         <outlet property="ferrisLight" destination="452-uh-aQ5" id="iHS-CC-Dze"/>
                         <outlet property="tentLights01" destination="9y5-oo-P62" id="6U0-io-eHg"/>
                         <outlet property="tentLights02" destination="fkD-Xm-bHY" id="dNO-o0-vTu"/>
@@ -4848,7 +4867,7 @@ It’s possible she never really mastered the art of riding a bike because she f
                                     <outletCollection property="gestureRecognizers" destination="DDm-ck-npG" appends="YES" id="RKP-cf-tGN"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZJ3-Ux-w5H">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZJ3-Ux-w5H">
                                 <rect key="frame" x="14.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4863,7 +4882,7 @@ It’s possible she never really mastered the art of riding a bike because she f
                                     <action selector="btnPrev_Tapped:" destination="6Mj-KR-zKZ" eventType="touchUpInside" id="B5T-v1-Fvd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4ff-Ff-MPE">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4ff-Ff-MPE">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4896,6 +4915,8 @@ It’s possible she never really mastered the art of riding a bike because she f
                         <outlet property="Song04" destination="clQ-QI-viY" id="L6x-7P-XPq"/>
                         <outlet property="Song05" destination="fvZ-Vh-o3c" id="fH8-B9-pY5"/>
                         <outlet property="Song06" destination="PEh-uf-0Gx" id="V03-4d-XOB"/>
+                        <outlet property="btnBack" destination="ZJ3-Ux-w5H" id="xCA-Td-RPs"/>
+                        <outlet property="btnNext" destination="4ff-Ff-MPE" id="j08-ZV-xU7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8T-ze-0HB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5109,7 +5130,7 @@ In fact, they loved the little girl so much that they always made a big deal whe
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PNm-Hc-ZNz">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PNm-Hc-ZNz">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5124,7 +5145,7 @@ In fact, they loved the little girl so much that they always made a big deal whe
                                     <action selector="btnPrev_Tapped:" destination="ymM-6r-nng" eventType="touchUpInside" id="Ta5-1v-XQB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O3a-W6-GNn">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O3a-W6-GNn">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5175,6 +5196,8 @@ In fact, they loved the little girl so much that they always made a big deal whe
                         <outlet property="Wheel03_01" destination="CQl-Oq-qAD" id="lcu-dA-2se"/>
                         <outlet property="Wheel03_02" destination="VqC-Vv-pEI" id="2Ed-UA-SCt"/>
                         <outlet property="WheelView" destination="3Bc-p4-k4J" id="2Fu-LH-zuW"/>
+                        <outlet property="btnBack" destination="PNm-Hc-ZNz" id="Bvs-vG-GJm"/>
+                        <outlet property="btnNext" destination="O3a-W6-GNn" id="j6q-wi-HBc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRV-Ag-WPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5286,7 +5309,7 @@ In fact, they loved the little girl so much that they always made a big deal whe
                                 </attributedString>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ukf-CI-air">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ukf-CI-air">
                                 <rect key="frame" x="14" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5301,7 +5324,7 @@ In fact, they loved the little girl so much that they always made a big deal whe
                                     <action selector="btnPrev_Tapped:" destination="Oey-ow-bp1" eventType="touchUpInside" id="11k-T4-E2K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dKh-xJ-VyJ">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dKh-xJ-VyJ">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5338,6 +5361,8 @@ In fact, they loved the little girl so much that they always made a big deal whe
                         <outlet property="Instruction" destination="ahz-Qg-sjh" id="pm5-Rq-v2i"/>
                         <outlet property="Jenny" destination="g6c-gw-sA5" id="6nE-r1-dMj"/>
                         <outlet property="Label" destination="fTG-YW-WSy" id="3Dc-On-i8K"/>
+                        <outlet property="btnBack" destination="ukf-CI-air" id="pvk-uZ-Wr6"/>
+                        <outlet property="btnNext" destination="dKh-xJ-VyJ" id="CbX-iL-pGy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kty-YM-fVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5441,7 +5466,7 @@ a great big square over and over and over again.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tOk-pn-D2Q">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tOk-pn-D2Q">
                                 <rect key="frame" x="14.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5456,7 +5481,7 @@ a great big square over and over and over again.</string>
                                     <action selector="btnPrev_Tapped:" destination="WpE-LB-6st" eventType="touchUpInside" id="IXN-2o-kzy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N1w-RL-lW7">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N1w-RL-lW7">
                                 <rect key="frame" x="931.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5494,6 +5519,8 @@ a great big square over and over and over again.</string>
                         <outlet property="Label" destination="HRu-Jc-k3f" id="MgP-yI-KJP"/>
                         <outlet property="Outer" destination="pXh-de-d98" id="C91-Wy-9bG"/>
                         <outlet property="OuterLights" destination="eTR-bP-FLv" id="eMe-C3-esV"/>
+                        <outlet property="btnBack" destination="tOk-pn-D2Q" id="G9R-pW-0IQ"/>
+                        <outlet property="btnNext" destination="N1w-RL-lW7" id="9dM-V7-loQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmh-Bw-vh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5631,7 +5658,7 @@ a great big square over and over and over again.</string>
                                     <outletCollection property="gestureRecognizers" destination="Bal-ey-T2v" appends="YES" id="Lp5-QG-0gM"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Pd-3p-80y">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Pd-3p-80y">
                                 <rect key="frame" x="14.5" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5646,7 +5673,7 @@ a great big square over and over and over again.</string>
                                     <action selector="btnPrev_Tapped:" destination="VNz-IS-2E3" eventType="touchUpInside" id="XSD-C7-RNb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F4J-lL-y4r">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="F4J-lL-y4r">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5689,6 +5716,8 @@ a great big square over and over and over again.</string>
                         <outlet property="StartAnimating" destination="UkA-gd-Le5" id="VOM-Ab-ec0"/>
                         <outlet property="TopRoof" destination="zX4-to-HMJ" id="gbg-Ls-QLA"/>
                         <outlet property="Trunk" destination="fBg-qH-gsf" id="BL3-TU-Li3"/>
+                        <outlet property="btnBack" destination="6Pd-3p-80y" id="KuG-x0-fgi"/>
+                        <outlet property="btnNext" destination="F4J-lL-y4r" id="efl-24-mRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybn-Gy-2aZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5739,7 +5768,7 @@ After all, don’t we all see the world through different eyes?
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ONh-Cx-Ren">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ONh-Cx-Ren">
                                 <rect key="frame" x="932" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5754,7 +5783,7 @@ After all, don’t we all see the world through different eyes?
                                     <action selector="btnNext_Tapped:" destination="RUJ-R5-2dt" eventType="touchUpInside" id="zkC-by-XfU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="03B-RX-iUZ">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="03B-RX-iUZ">
                                 <rect key="frame" x="22" y="676" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -5779,6 +5808,8 @@ After all, don’t we all see the world through different eyes?
                         <outlet property="Label" destination="wFc-uP-fLp" id="8Um-l5-NDs"/>
                         <outlet property="TentLights01" destination="vkc-50-Hgd" id="95g-vs-aI7"/>
                         <outlet property="TentLights02" destination="UZo-WU-rTu" id="1JR-tb-Mky"/>
+                        <outlet property="btnBack" destination="03B-RX-iUZ" id="F1l-bY-qZV"/>
+                        <outlet property="btnNext" destination="ONh-Cx-Ren" id="uVp-ap-Pdc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUJ-R5-2dt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -6301,780 +6332,6 @@ After all, don’t we all see the world through different eyes?
         <image name="StartAgain.png" width="98" height="129"/>
         <image name="Win.png" width="199" height="113"/>
     </resources>
-    <classes>
-        <class className="GAITrackedViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GAITrackedViewController.h"/>
-        </class>
-        <class className="HomeViewController" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="About" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="About_BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="About_Facebook" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="About_Home" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="About_More" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="About_Rate" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="DimBackground" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Gramophone" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Help_Frame" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="MedalGold" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="MedalSilver" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="MiaoHelp" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="MiaoHelp_Tapped" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Note" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="Notepopover" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL20_BW" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL20_COL" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_08BW" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_08COL" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_11BW" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_11COL" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_14BW" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_14COL" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Reset" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Read_OFF" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Read_ON" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="RibbonBase" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SFX_Off" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SFX_On" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="StartReading" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="babyGate" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="popoverClose" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="thirdCircle" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="warningReset" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="warningResetNo" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="warningResetYes" candidateClass="OBShapedButton"/>
-                <relationship kind="outletCollection" name="otherCircles" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="InfiniteScrollView" superclassName="UIScrollView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfiniteScrollView.h"/>
-        </class>
-        <class className="NavViewController" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NavViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Bookmark" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Readaloud" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SFX" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV03b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV03c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV04" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV05" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV06" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV07" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV08" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV09" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV10" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV11" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV12" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV13" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV14" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV15" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV16" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV17" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV18" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV19" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV20" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV21" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="SV22" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="OBShapedButton" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OBShapedButton.h"/>
-        </class>
-        <class className="PPAnimatingViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PPAnimatingViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnNext_Tapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="btnPrev_Tapped:" candidateClass="UITapGestureRecognizer"/>
-            </relationships>
-        </class>
-        <class className="PPJennyNavigatorViewController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PPJennyNavigatorViewController.h"/>
-        </class>
-        <class className="PPPuzzle10ViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PPPuzzle10ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="PZL09_01a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_01b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_01c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_02a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_02b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_02c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_03a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_03b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_03c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_04a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_04b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_04c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_05a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_05b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_05c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_06a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_06b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_06c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_07a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_07b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_07c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_08a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_08b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_08c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_09a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_09b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_09c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_11a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_11b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_11c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_12a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_12b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_12c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_13a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_13b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_13c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_14a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_14b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_14c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_15a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_15b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_15c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_17a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_17b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_17c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_18a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_18b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_18c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_19a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_19b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_19c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_20a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_20b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_20c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_21a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_21b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_21c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_22a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_22b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_22c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_23a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_23b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_23c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_24a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_24b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_24c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_25a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_25b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_25c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_27a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_27b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_27c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_28a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_28b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_28c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_29a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_29b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_29c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_30a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_30b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_30c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_31a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_31b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_31c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_32a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_32b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_32c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_33a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_33b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_33c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Jenny01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Jenny01_2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Miao01_head" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Miao01_head_2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Miao02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Miao02_2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Miaow01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL09_Miaow01_2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="background1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="background2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="background3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="imageSection1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="imageSection2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="imageSection3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="puzzleView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
-                <relationship kind="outletCollection" name="Aimages" candidateClass="UIImageView"/>
-                <relationship kind="outletCollection" name="Bimages" candidateClass="UIImageView"/>
-                <relationship kind="outletCollection" name="Cimages" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="PPPuzzleOneViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PPPuzzleOneViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="PZL06_01a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_01b" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_01c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_02a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_02b" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_02c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_03a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_03b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_03c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_04a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_04b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_04c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_05a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_05b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_05c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_06a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_06b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_06c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_07a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_07b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_07c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_09a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_09b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_09c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_10a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_10b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_10c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_11a" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_11b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_11c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_12a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_12b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_12c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_BG" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_Reveal" candidateClass="PulsingUIView"/>
-                <relationship kind="outlet" name="PZL06_miaow02a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL06_miaow02b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="PPPuzzleThreeViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PPPuzzleThreeViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="PZL08_01a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_01b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_01c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_02a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_02b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_02c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_03a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_03b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_03c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_04a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_04b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_04c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_05a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_05b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_05c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_06a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_06b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_06c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_07a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_07b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_07c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_08a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_08b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_08c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_09a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_09b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_09c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_10a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_10b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_10c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_11a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_11b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_11c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_12a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_12b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_12c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_13a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_13b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_13c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_14a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_14b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_14c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_15a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_15b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_15c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_16a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_16b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_16c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_17a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_17b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_17c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_18a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_18b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_18c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_19a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_19b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_19c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_20a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_20b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_20c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_21a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_21b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_21c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_22a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_22b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_22c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_23a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_23b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_23c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_24a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_24b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_24c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_25a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_25b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_25c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_26a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_26b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_26c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_27a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_27b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_27c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_28a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_28b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_28c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_Miaow01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_Miaow02a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_Miaow02b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL08_Reveal" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="PPPuzzleTwoViewController" superclassName="GAITrackedViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PPPuzzleTwoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="PZL07_01a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_01b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_01c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_02a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_02b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_02c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_03a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_03b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_03c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_04a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_04b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_04c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_05a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_05b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_05c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_06a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_06b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_06c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_07a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_07b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_07c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_08a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_08b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_08c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_09a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_09b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_09c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_10a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_10b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_10c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_11a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_11b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_11c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_12a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_12b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_12c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_13a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_13b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_13c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_14a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_14b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_14c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_15a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_15b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_15c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_17a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_17b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_17c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_18a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_18b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_18c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_19a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_19b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_19c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_BG01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_BG02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_miaow01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_miaow02a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL07_miaow02b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_DimBackground" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Play" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PZL_Instruction_Skip" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="hiddenImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="PPRootView" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PPRootView.h"/>
-        </class>
-        <class className="PulsingUIView" superclassName="UIImageView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PulsingUIView.h"/>
-        </class>
-        <class className="PuzzleOneLeft" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PuzzleOneLeft.h"/>
-        </class>
-        <class className="PuzzleTenLeft" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PuzzleTenLeft.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="PuzzleThreeLeft" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PuzzleThreeLeft.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="PuzzleTwoLeft" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PuzzleTwoLeft.h"/>
-        </class>
-        <class className="SV01" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV01.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Jenny" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="btnPrev" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="SV02" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV02.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Miao" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="InfiniteScrollView"/>
-            </relationships>
-        </class>
-        <class className="SV03" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV03.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bird" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Plane" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ViewAContainer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="SV03b" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV03b.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Birdb" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Flamingo4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Labelb" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Planeb" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Smoke" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="btnBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="SV03c" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV03c.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Birdc" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Boat" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Car1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Car2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Car3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Car4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Labelc" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Labelc1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Planec" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="btnBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="btnNext" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="SV04" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV04.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BugRound" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BugSquare" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Round" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Square" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV05" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV05.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG_01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BG_02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Btn_Back" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="Btn_Next" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="CloudsL" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="CloudsR" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label_01" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Label_02" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Miao_01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Miao_02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Moon" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV06" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV06.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bowl" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit03_01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit04" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit05" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit06" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fruit07" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Instructions" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="TryAgainMessage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="WinMessage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV07" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV07.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Aqua" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="EyeL" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="EyeR" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fish01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fish02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Fish03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SV09" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV09.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Dessert" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Jenny01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Jenny02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Oops" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV10" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV10.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Table01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Table02" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV12" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV12.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BallOff" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BallOn" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bird" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BirdBoy" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Jenny" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Miao01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Miao02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Plane" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PlaneBoy" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV13" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV13.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike01L" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike01R" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike02L" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike02R" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike03L" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike03R" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike04" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike04L" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Bike04R" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Jenny" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label01" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Miao01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Miao02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PedalFix" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="PedalTurn" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="superView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="SV15" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV15.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Boy01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BoyB01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Dad01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Miao01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Mum01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Song01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Song02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Song03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Song04" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Song05" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Song06" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV16" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV16.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Ballerina" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BallerinaView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="BlueParrot" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Canon01a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Canon01b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Canon02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Clown01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Clown02a" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Clown02b" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Clown02c" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ClownView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="Donut01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Donut02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="DonutView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="Duck01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Duck02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="DuckView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="FG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label01" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Muscles" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Rabbit01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Rabbit02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Rabbit03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="RabbitView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="Uni" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Wheel01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Wheel02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Wheel03_01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Wheel03_02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="WheelView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="SV17" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV17.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Arm" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Ball" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Clown01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Clown02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Clown03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Instruction" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Jenny" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SV18" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV18.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage02" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage03" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage04" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage05" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage06" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage07" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage08" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage09" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage10" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage11" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Carriage12" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Inner" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="InnerLights" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Outer" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="OuterLights" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV19" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV19.h"/>
-            <relationships>
-                <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Cat" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="CatView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="CatViewPole" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Dolphin" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="DolphinView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="DolphinViewPole" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Dragon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="DragonView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="DragonViewPole" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Frog" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="FrogView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="FrogViewPole" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="Mushroom" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="MushroomView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="MushroomViewPole" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Rabbit" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="RabbitView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="RabbitViewPole" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="StartAnimating" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="TopRoof" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Trunk" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV21" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV21.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Basket" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="FerrisLights" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="TentLights01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="TentLights02" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="SV22" superclassName="PPAnimatingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SV22.h"/>
-            <relationships>
-                <relationship kind="outlet" name="CreditRoll" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="RateUs" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="Restart" candidateClass="OBShapedButton"/>
-                <relationship kind="outlet" name="basket" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="ferrisLight" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tentLights01" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="tentLights02" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

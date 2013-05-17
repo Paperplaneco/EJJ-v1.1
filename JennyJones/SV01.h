@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "PPAnimatingViewController.h"
 
-@interface SV01 : PPAnimatingViewController
+@interface SV01 : PPAnimatingViewController <AVAudioPlayerDelegate>
 
 @end

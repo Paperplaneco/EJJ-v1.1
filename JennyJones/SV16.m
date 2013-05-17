@@ -53,6 +53,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *Rabbit02;
 @property (weak, nonatomic) IBOutlet UIImageView *Rabbit03;
 @property (weak, nonatomic) IBOutlet UILabel *Label01;
+@property (weak, nonatomic) IBOutlet UIButton *btnBack;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
 
 @property NSUserDefaults *defaults;
 
@@ -409,11 +411,16 @@ NSNumber* DegreesToNumber(CGFloat degrees)
 	}
 }
 
-- (void) viewDidLoad
+- (void) voiceoverPlayerFinishPlaying:(NSNotification *) pNotification
 {
-	[super viewDidLoad];
-	
-	self.trackedViewName = @"The parade";
+	NSString *message = (NSString *) [pNotification object];
+	if ([message isEqualToString:@"YES"])
+	{
+		self.btnBack.alpha = 1.0;
+		self.btnNext.alpha = 1.0;
+		self.btnBack.userInteractionEnabled = YES;
+		self.btnNext.userInteractionEnabled = YES;
+	}
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -437,6 +444,10 @@ NSNumber* DegreesToNumber(CGFloat degrees)
     [self circusMarchingTimer];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
+	self.btnBack.alpha = 0.25;
+	self.btnNext.alpha = 0.25;
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -487,4 +498,9 @@ NSNumber* DegreesToNumber(CGFloat degrees)
     self.defaults = nil;
 }
 
+- (void)viewDidUnload {
+	[self setBtnBack:nil];
+	[self setBtnNext:nil];
+	[super viewDidUnload];
+}
 @end

@@ -44,6 +44,8 @@
 	[super viewWillAppear:animated];
 	
     self.voiceOverPlayer = [[PPAudioPlayer alloc] init];
+	self.voiceOverPlayer.sendNotification = YES;
+	
     self.revealPlayer = [[PPAudioPlayer alloc] init];
     self.SFX01 = [[PPAudioPlayer alloc] init];
     self.SFX02 = [[PPAudioPlayer alloc] init];
@@ -52,7 +54,6 @@
     self.SFX05 = [[PPAudioPlayer alloc] init];
     self.SFX06 = [[PPAudioPlayer alloc] init];
     self.SFX07 = [[PPAudioPlayer alloc] init];
-
 }
 
 - (void) viewWillDisappear:(BOOL)animated

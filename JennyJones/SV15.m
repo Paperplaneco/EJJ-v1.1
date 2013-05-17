@@ -29,6 +29,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *BoyB01;
 @property (weak, nonatomic) IBOutlet UIImageView *Miao01;
 @property (weak, nonatomic) IBOutlet UILabel *Label;
+@property (weak, nonatomic) IBOutlet UIButton *btnBack;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
 
 @property NSUserDefaults *defaults;
 
@@ -292,6 +294,18 @@
 	}
 }
 
+- (void) voiceoverPlayerFinishPlaying:(NSNotification *) pNotification
+{
+	NSString *message = (NSString *) [pNotification object];
+	if ([message isEqualToString:@"YES"])
+	{
+		self.btnBack.alpha = 1.0;
+		self.btnNext.alpha = 1.0;
+		self.btnBack.userInteractionEnabled = YES;
+		self.btnNext.userInteractionEnabled = YES;
+	}
+}
+
 - (void) appWillEnterForeground
 {
 	switch (songid) {
@@ -322,13 +336,6 @@
         default:
             break;
     }
-}
-
-- (void) viewDidLoad
-{
-	[super viewDidLoad];
-	
-	self.trackedViewName = @"Favourite music";
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -365,6 +372,10 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
+	self.btnBack.alpha = 0.25;
+	self.btnNext.alpha = 0.25;
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -397,4 +408,9 @@
     timer = nil;
 }
 
+- (void)viewDidUnload {
+	[self setBtnBack:nil];
+	[self setBtnNext:nil];
+	[super viewDidUnload];
+}
 @end

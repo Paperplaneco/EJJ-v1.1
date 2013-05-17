@@ -614,7 +614,7 @@
 {
     [super viewDidLoad];
 	
-	self.trackedViewName = @"Home View Controller";
+	//self.trackedViewName = @"Home View Controller";
 	
     self.pageImages = [NSArray arrayWithObjects:
                        [UIImage imageNamed: @"00Help_01.jpg"],

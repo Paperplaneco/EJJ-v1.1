@@ -168,11 +168,16 @@
 	}
 }
 
-- (void) viewDidLoad
+- (void) voiceoverPlayerFinishPlaying:(NSNotification *) pNotification
 {
-	[super viewDidLoad];
-	
-	self.trackedViewName = @"A strange moon";
+	NSString *message = (NSString *) [pNotification object];
+	if ([message isEqualToString:@"YES"])
+	{
+		self.Btn_Back.alpha = 1.0;
+		self.Btn_Next.alpha = 1.0;
+		self.Btn_Back.userInteractionEnabled = YES;
+		self.Btn_Next.userInteractionEnabled = YES;
+	}
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -201,6 +206,10 @@
     percentCount = 0;
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
+	self.Btn_Back.alpha = 0.25;
+	self.Btn_Next.alpha = 0.25;
 }
 
 - (void) viewWillDisappear:(BOOL)animated

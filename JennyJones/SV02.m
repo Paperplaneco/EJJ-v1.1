@@ -20,6 +20,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *Miao;
 @property (weak, nonatomic) IBOutlet UILabel *Label;
 @property (weak, nonatomic) IBOutlet InfiniteScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIButton *btnBack;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
+
 
 @property NSUserDefaults *defaults;
 
@@ -92,11 +95,16 @@
 	}
 }
 
-- (void) viewDidLoad
+- (void) voiceoverPlayerFinishPlaying:(NSNotification *) pNotification
 {
-	[super viewDidLoad];
-	
-	self.trackedViewName = @"Plenty of Joneses";
+	NSString *message = (NSString *) [pNotification object];
+	if ([message isEqualToString:@"YES"])
+	{
+		self.btnBack.alpha = 1.0;
+		self.btnNext.alpha = 1.0;
+		self.btnBack.userInteractionEnabled = YES;
+		self.btnNext.userInteractionEnabled = YES;
+	}
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -121,6 +129,10 @@
     self.Label.font = [UIFont fontWithName:@"AFontwithSerifs" size:30];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
+	self.btnBack.alpha = 0.25;
+	self.btnNext.alpha = 0.25;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -140,5 +152,10 @@
     self.SFX05 = nil;
     
     self.defaults = nil;
+}
+- (void)viewDidUnload {
+	[self setBtnBack:nil];
+	[self setBtnNext:nil];
+	[super viewDidUnload];
 }
 @end

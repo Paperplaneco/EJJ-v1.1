@@ -11,7 +11,7 @@
 #import "GAITrackedViewController.h"
 
 
-@interface PPAnimatingViewController : GAITrackedViewController <AVAudioPlayerDelegate>
+@interface PPAnimatingViewController : GAITrackedViewController
 
 @property (strong) PPAudioPlayer *voiceOverPlayer;
 @property (strong) PPAudioPlayer *revealPlayer;

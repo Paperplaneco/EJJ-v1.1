@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *Label;
 @property (weak, nonatomic) IBOutlet UIImageView *Bird;
 @property (weak, nonatomic) IBOutlet UIImageView *Plane;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
+@property (weak, nonatomic) IBOutlet UIButton *btnBack;
 
 @property NSUserDefaults *defaults;
 
@@ -59,11 +61,16 @@
 	}
 }
 
-- (void) viewDidLoad
+- (void) voiceoverPlayerFinishPlaying:(NSNotification *) pNotification
 {
-	[super viewDidLoad];
-	
-	self.trackedViewName = @"Ordinary world";
+	NSString *message = (NSString *) [pNotification object];
+	if ([message isEqualToString:@"YES"])
+	{
+		self.btnBack.alpha = 1.0;
+		self.btnNext.alpha = 1.0;
+		self.btnBack.userInteractionEnabled = YES;
+		self.btnNext.userInteractionEnabled = YES;
+	}
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -86,6 +93,10 @@
     [self birdAndPlaneMoving];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
+	self.btnBack.alpha = 0.25;
+	self.btnNext.alpha = 0.25;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -101,5 +112,10 @@
 	self.SFX02 = nil;
     
     self.defaults = nil;
+}
+- (void)viewDidUnload {
+	[self setBtnNext:nil];
+	[self setBtnBack:nil];
+	[super viewDidUnload];
 }
 @end

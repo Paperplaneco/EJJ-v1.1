@@ -16,6 +16,7 @@
 @property (nonatomic) BOOL repeats;
 @property (nonatomic) NSString * audioFile;
 @property (nonatomic) float volume;
+@property BOOL sendNotification;
 
 -(id)initWithAudioFile:(NSString*)audioFleName repeats:(BOOL)doesRepeat;
 

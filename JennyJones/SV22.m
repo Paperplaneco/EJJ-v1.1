@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *tentLights01;
 @property (weak, nonatomic) IBOutlet UIImageView *tentLights02;
 @property (weak, nonatomic) IBOutlet UIImageView *basket;
+@property (weak, nonatomic) IBOutlet OBShapedButton *btnBack;
 
 @property (nonatomic) NSTimer *basketTimer;
 @property NSUserDefaults *defaults;
@@ -91,6 +92,16 @@
 	}
 }
 
+- (void) voiceoverPlayerFinishPlaying:(NSNotification *) pNotification
+{
+	NSString *message = (NSString *) [pNotification object];
+	if ([message isEqualToString:@"YES"])
+	{
+		self.btnBack.alpha = 1.0;
+		self.btnBack.userInteractionEnabled = YES;
+	}
+}
+
 - (void) viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
@@ -110,6 +121,9 @@
     self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMoving) userInfo:nil repeats:YES];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
+	self.btnBack.alpha = 0.25;
 }
 
 - (void) viewWillDisappear:(BOOL)animated
@@ -128,4 +142,8 @@
 	self.defaults = nil;
 }
 
+- (void)viewDidUnload {
+	[self setBtnBack:nil];
+	[super viewDidUnload];
+}
 @end

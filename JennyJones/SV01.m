@@ -60,21 +60,24 @@
 	}
 }
 
-- (void) viewDidLoad
+- (void) voiceoverPlayerFinishPlaying:(NSNotification *) pNotification
 {
-	[super viewDidLoad];
-	
-	self.trackedViewName = @"Millions of Jennys";
+	NSString *message = (NSString *) [pNotification object];
+	if ([message isEqualToString:@"YES"])
+	{
+		self.btnPrev.alpha = 1.0;
+		self.btnNext.alpha = 1.0;
+		self.btnPrev.userInteractionEnabled = YES;
+		self.btnNext.userInteractionEnabled = YES;
+	}
 }
 
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
 
-	//self.btnPrev.alpha = 0.25;
-	//self.btnNext.alpha = 0.25;
-	self.btnNext.userInteractionEnabled = YES;
-	self.btnPrev.userInteractionEnabled = YES;
+	self.btnPrev.alpha = 0.25;
+	self.btnNext.alpha = 0.25;
 	
     self.defaults = [NSUserDefaults standardUserDefaults];
     
@@ -86,6 +89,7 @@
     self.Label.font = [UIFont fontWithName:@"AFontwithSerifs" size:32];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
 }
 
 - (void) viewWillDisappear:(BOOL)animated

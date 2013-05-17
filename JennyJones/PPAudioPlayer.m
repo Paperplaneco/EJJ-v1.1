@@ -13,6 +13,7 @@
 @synthesize repeats = _repeats;
 @synthesize audioFile = _audioFile;
 @synthesize volume = _volume;
+@synthesize sendNotification = _sendNotification;
 
 -(void) setRepeats:(BOOL)repeats
 {
@@ -34,6 +35,7 @@
     
     NSError *error;
     self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+	self.audioPlayer.delegate = self;
 }
 
 -(id)initWithAudioFile:(NSString*)audioFleName repeats:(BOOL)doesRepeat
@@ -45,6 +47,7 @@
         NSError *error;
         
         self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+		self.audioPlayer.delegate = self;
         if (doesRepeat)
             self.audioPlayer.numberOfLoops = -1;
         else self.audioPlayer.numberOfLoops = 0;
@@ -55,17 +58,10 @@
     return self;
 }
 
-- (id) init
-{
-	if (self = [super init])
-		self.audioPlayer.delegate = self;
-	
-	return self;
-}
-
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
 {
-	NSLog(@"Player finish playing");
+	if (self.sendNotification)
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VoiceoverPlayerFinishPlaying" object:@"YES"];
 }
 
 -(void) play

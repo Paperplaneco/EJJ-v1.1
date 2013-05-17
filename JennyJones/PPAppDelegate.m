@@ -35,14 +35,14 @@
     
     //[TestFlight takeOff:@"d84ca5370b44a37fdf4a2475364a6f5e_MTgwNjcwMjAxMy0wMS0yOSAwNTowNTozMC44MjU2MzE"];
 	
-	// Optional: automatically send uncaught exceptions to Google Analytics.
-	[GAI sharedInstance].trackUncaughtExceptions = YES;
-	// Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-	[GAI sharedInstance].dispatchInterval = 20;
-	// Optional: set debug to YES for extra debugging information.
-	[GAI sharedInstance].debug = YES;
-	// Create tracker instance.
-	id<GAITracker>tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-39393540-1"];
+//	// Optional: automatically send uncaught exceptions to Google Analytics.
+//	[GAI sharedInstance].trackUncaughtExceptions = YES;
+//	// Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+//	[GAI sharedInstance].dispatchInterval = 20;
+//	// Optional: set debug to YES for extra debugging information.
+//	[GAI sharedInstance].debug = YES;
+//	// Create tracker instance.
+//	id<GAITracker>tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-39393540-1"];
 
     return YES;
 }
