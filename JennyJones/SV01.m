@@ -90,6 +90,10 @@
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"MuteVoiceoverPlayer" object:nil];
+	
+	if ([[self.defaults objectForKey:@"read aloud player"] isEqualToString:@"NO"])
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VoiceoverPlayerFinishPlaying" object:@"YES"];
 }
 
 - (void) viewWillDisappear:(BOOL)animated

@@ -376,6 +376,9 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
 	self.btnBack.alpha = 0.25;
 	self.btnNext.alpha = 0.25;
+	
+	if ([[self.defaults objectForKey:@"read aloud player"] isEqualToString:@"NO"])
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VoiceoverPlayerFinishPlaying" object:@"YES"];
 }
 
 - (void) viewWillDisappear:(BOOL)animated

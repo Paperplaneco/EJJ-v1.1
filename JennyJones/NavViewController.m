@@ -104,6 +104,8 @@
 		self.Readaloud.center = READ_OFF_POS;
 		[self.defaults setObject:@"NO" forKey:@"read aloud player"];
 		[self.defaults synchronize];
+		
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VoiceoverPlayerFinishPlaying" object:@"YES"];
 	}
 	else
 	{
@@ -124,6 +126,8 @@
 			self.Readaloud.center = READ_OFF_POS;
 			[self.defaults setObject:@"NO" forKey:@"read aloud player"];
 			[self.defaults synchronize];
+			
+			[[NSNotificationCenter defaultCenter] postNotificationName:@"VoiceoverPlayerFinishPlaying" object:@"YES"];
 		}
 		else
 		{

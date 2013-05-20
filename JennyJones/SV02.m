@@ -58,7 +58,7 @@
                                      [UIImage imageNamed:@"02_miao11.png"],
                                      nil];
         
-        self.Miao.animationDuration = 5;
+        self.Miao.animationDuration = 3.9;
         self.Miao.animationRepeatCount = 1;
         [self.Miao startAnimating];
 		
@@ -134,6 +134,9 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
 	self.btnBack.alpha = 0.25;
 	self.btnNext.alpha = 0.25;
+	
+	if ([[self.defaults objectForKey:@"read aloud player"] isEqualToString:@"NO"])
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"VoiceoverPlayerFinishPlaying" object:@"YES"];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

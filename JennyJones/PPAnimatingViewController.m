@@ -70,7 +70,6 @@
     self.SFX05 = nil;
     self.SFX06 = nil;
     self.SFX07 = nil;
-
 }
 
 @end
