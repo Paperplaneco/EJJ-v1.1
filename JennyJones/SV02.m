@@ -62,7 +62,8 @@
         self.Miao.animationRepeatCount = 1;
         [self.Miao startAnimating];
 		
-		[[NSRunLoop mainRunLoop] addTimer:[NSTimer scheduledTimerWithTimeInterval:self.Miao.animationDuration - 0.55 target:self selector:@selector(miaoAnimate) userInfo:nil repeats:NO] forMode:NSRunLoopCommonModes];
+		[self.revealPlayer play];
+//		[[NSRunLoop mainRunLoop] addTimer:[NSTimer scheduledTimerWithTimeInterval:self.Miao.animationDuration - 0.55 target:self selector:@selector(miaoAnimate) userInfo:nil repeats:NO] forMode:NSRunLoopCommonModes];
     }
 }
 
