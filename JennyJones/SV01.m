@@ -65,9 +65,7 @@
 	NSString *message = (NSString *) [pNotification object];
 	if ([message isEqualToString:@"YES"])
 	{
-		self.btnPrev.alpha = 1.0;
 		self.btnNext.alpha = 1.0;
-		self.btnPrev.userInteractionEnabled = YES;
 		self.btnNext.userInteractionEnabled = YES;
 	}
 }
@@ -76,7 +74,6 @@
 {
     [super viewWillAppear:animated];
 
-	self.btnPrev.alpha = 0.25;
 	self.btnNext.alpha = 0.25;
 	
     self.defaults = [NSUserDefaults standardUserDefaults];

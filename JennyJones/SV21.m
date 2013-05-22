@@ -60,7 +60,7 @@
 {
     self.Label.hidden = YES;
     
-    self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMoving) userInfo:nil repeats:YES];
+    //self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMoving) userInfo:nil repeats:YES];
     //self.creditRollTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(creditRollStartRolling) userInfo:nil repeats:YES];
 }
 
@@ -187,9 +187,7 @@
 	NSString *message = (NSString *) [pNotification object];
 	if ([message isEqualToString:@"YES"])
 	{
-		self.btnBack.alpha = 1.0;
 		self.btnNext.alpha = 1.0;
-		self.btnBack.userInteractionEnabled = YES;
 		self.btnNext.userInteractionEnabled = YES;
 	}
 }
@@ -222,7 +220,6 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navShow:) name:@"NavShow" object:nil];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(voiceoverPlayerFinishPlaying:) name:@"VoiceoverPlayerFinishPlaying" object:nil];
-	self.btnBack.alpha = 0.25;
 	self.btnNext.alpha = 0.25;
 	
 	if ([[self.defaults objectForKey:@"read aloud player"] isEqualToString:@"NO"])
