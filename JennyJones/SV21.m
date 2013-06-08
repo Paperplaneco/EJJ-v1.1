@@ -58,7 +58,7 @@
 
 - (void) startTimer
 {
-    self.Label.hidden = YES;
+    //self.Label.hidden = YES;
     
     //self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMoving) userInfo:nil repeats:YES];
     //self.creditRollTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(creditRollStartRolling) userInfo:nil repeats:YES];
@@ -212,7 +212,7 @@
     [self lightsStartTwinkling];
     
     // CreditImage start rolling
-    [NSTimer scheduledTimerWithTimeInterval:31.0 target:self selector:@selector(startTimer) userInfo:nil repeats:NO];
+    //[NSTimer scheduledTimerWithTimeInterval:31.0 target:self selector:@selector(startTimer) userInfo:nil repeats:NO];
     
     // Setup firework
     [self setupFireWork];

@@ -70,6 +70,8 @@
     self.DimBackground.alpha = 0.0;
 	
 	self.popoverClose.hidden = YES;
+    
+    [self hideBabyGate:YES];
 }
 
 - (void) revealPopoverCloseButton:(CGRect) rect
@@ -105,16 +107,27 @@
 }
 
 - (IBAction)otherCirclesTapped:(UITapGestureRecognizer *)sender {
-	[self hideBabyGate:YES];
-	[self imageAlpha:1.0];
-	[self imageUserInteractionEnabled:YES];
-	self.DimBackground.hidden = YES;
-    self.DimBackground.alpha = 0.0;
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    animation.duration = 0.08;
+    animation.repeatCount = 3;
+    animation.autoreverses = YES;
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.babyGate.center.x - 20.0f, self.babyGate.center.y)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(self.babyGate.center.x + 20.0f, self.babyGate.center.y)];
+    [self.babyGate.layer addAnimation:animation forKey:@"position"];
+    
+    CABasicAnimation *buttonAnim = [CABasicAnimation animationWithKeyPath:@"position"];
+    buttonAnim.duration = 0.08;
+    buttonAnim.repeatCount = 3;
+    buttonAnim.autoreverses = YES;
+    buttonAnim.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.popoverClose.center.x - 20.0f, self.popoverClose.center.y)];
+    buttonAnim.toValue = [NSValue valueWithCGPoint:CGPointMake(self.popoverClose.center.x + 20.0f, self.popoverClose.center.y)];
+    [self.popoverClose.layer addAnimation:buttonAnim forKey:@"position"];
 }
 
 - (IBAction)aboutPage:(UITapGestureRecognizer *)sender
 {
 	[self hideBabyGate:NO];
+    [self revealPopoverCloseButton:self.babyGate.frame];
 	[self imageAlpha:0.4];
 	[self imageUserInteractionEnabled:NO];
 }

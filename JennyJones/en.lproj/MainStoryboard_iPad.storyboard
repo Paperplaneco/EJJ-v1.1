@@ -2829,21 +2829,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qyy-xR-6vs" customClass="OBShapedButton">
-                                <rect key="frame" x="917" y="6" width="95" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="00_close.PNG">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="closePopover:" destination="Ay2-9r-S6v" eventType="touchUpInside" id="fXq-DR-uBJ"/>
-                                </connections>
-                            </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" image="00_Warning.png" id="y9L-Hy-1rg">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2994,6 +2979,21 @@
                                     <outletCollection property="gestureRecognizers" destination="RhA-9r-bil" appends="YES" id="oM5-e9-Dcx"/>
                                 </connections>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qyy-xR-6vs" customClass="OBShapedButton">
+                                <rect key="frame" x="917" y="6" width="95" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="00_close.PNG">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePopover:" destination="Ay2-9r-S6v" eventType="touchUpInside" id="fXq-DR-uBJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -7005,16 +7005,6 @@ After all, don’t we all see the world through different eyes?
         <class className="SV16" superclassName="PPAnimatingViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SV16.h"/>
             <relationships>
-                <relationship kind="action" name="ballerinaTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="blueParrotTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="canonTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="clownTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="donutTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="duckTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="musclesTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="rabbitTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="uniTapped:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="action" name="wheelTapped:" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="outlet" name="BG" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="Ballerina" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="BallerinaView" candidateClass="UIView"/>
