@@ -91,7 +91,7 @@
     if (scale < 0.4)
 	{
 		[self.basketTimer invalidate];
-		self.basket.layer.anchorPoint = CGPointMake(0.5, 0);
+		self.basket.layer.anchorPoint = CGPointMake(0.5, 0.05);
 		self.basket.center = CGPointMake(self.basket.center.x + self.basket.frame.size.width / 2, self.basket.center.y);
 		//basketMovingRight = YES;
 		//self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMovingAround) userInfo:nil repeats:YES];
@@ -104,10 +104,10 @@
 {
 	CABasicAnimation *swingAnim = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
 
-	[swingAnim setFromValue: [NSNumber numberWithFloat: -10 * M_PI / 180]];
-	[swingAnim setToValue: [NSNumber numberWithFloat: 10 * M_PI / 180]];
+	[swingAnim setFromValue: [NSNumber numberWithFloat: -3 * M_PI / 180]];
+	[swingAnim setToValue: [NSNumber numberWithFloat: 3 * M_PI / 180]];
 	[swingAnim setAutoreverses: YES];
-	[swingAnim setDuration:4];
+	[swingAnim setDuration:10];
 	[swingAnim setRepeatCount:HUGE_VALF];
 	[swingAnim setRemovedOnCompletion: NO];
 	swingAnim.delegate = self;
