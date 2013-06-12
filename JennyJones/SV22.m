@@ -91,8 +91,8 @@
     if (scale < 0.4)
 	{
 		[self.basketTimer invalidate];
-		self.basket.layer.anchorPoint = CGPointMake(0.5, 0.05);
-		self.basket.center = CGPointMake(self.basket.center.x + self.basket.frame.size.width / 2, self.basket.center.y);
+		//self.basket.layer.anchorPoint = CGPointMake(0.5, -0.05);
+		//self.basket.center = CGPointMake(self.basket.center.x + self.basket.frame.size.width / 2, self.basket.center.y);
 		//basketMovingRight = YES;
 		//self.basketTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(basketMovingAround) userInfo:nil repeats:YES];
 		[self basketSwinging];
@@ -166,7 +166,7 @@
 	self.RateUs.alpha = 0.0;
 	self.Restart.alpha = 0.0;
 	
-    self.basket.layer.anchorPoint = CGPointMake(0, 0);
+    self.basket.layer.anchorPoint = CGPointMake(0, -0.05);
     self.basket.frame = CGRectMake(0, 0, self.basket.frame.size.width, self.basket.frame.size.height);
     
 	self.CreditRoll.frame = CGRectMake(self.CreditRoll.frame.origin.x, self.view.frame.size.height - 250, self.CreditRoll.frame.size.width, self.CreditRoll.frame.size.height);
