@@ -33,7 +33,7 @@
     // Override point for customization after application launch.
     [[NSUserDefaults standardUserDefaults] registerDefaults: [NSDictionary dictionaryWithObjectsAndKeys:@"YES", @"read aloud player", @"YES", @"sound effect player", @"YES", @"play voiceover", nil]];
     
-    [TestFlight takeOff:@"d84ca5370b44a37fdf4a2475364a6f5e_MTgwNjcwMjAxMy0wMS0yOSAwNTowNTozMC44MjU2MzE"];
+    //[TestFlight takeOff:@"d84ca5370b44a37fdf4a2475364a6f5e_MTgwNjcwMjAxMy0wMS0yOSAwNTowNTozMC44MjU2MzE"];
 	
 //	// Optional: automatically send uncaught exceptions to Google Analytics.
 //	[GAI sharedInstance].trackUncaughtExceptions = YES;
