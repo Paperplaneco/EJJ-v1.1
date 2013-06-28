@@ -4985,7 +4985,7 @@
 			attributes = {
 				CLASSPREFIX = PP;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "A*STAR Institute for Infocomm Research";
+				ORGANIZATIONNAME = PaperplaneCo;
 			};
 			buildConfigurationList = E96050C21585E4DD00C6E693 /* Build configuration list for PBXProject "JennyJones" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -6387,8 +6387,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Paperplane Pilots Pte Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paperplane Pilots Pte Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -6403,8 +6403,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PROVISIONING_PROFILE = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -6420,8 +6420,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Paperplane Pilots Pte Ltd";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paperplane Pilots Pte Ltd";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -6430,8 +6430,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EE4AC6B4-BD02-4F09-9EC6-2371B1A05E1E";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
